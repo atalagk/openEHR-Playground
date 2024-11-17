@@ -1,0 +1,171 @@
+archetype (adl_version=1.4; uid=a70194f8-eabe-46f1-86e3-a29513e99b71)
+	openEHR-EHR-OBSERVATION.sf12.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2024-11-18">
+		["name"] = <"Koray Atalag">
+		["organisation"] = <"Galata-Digital">
+		["email"] = <"koray.atalag@gmail.com">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["build_uid"] = <"a995dd0b-e638-3e4c-add1-b6ce26261a7e">
+		["MD5-CAM-1.0.1"] = <"908e12b6d11672de24123af6b511cf18">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- 12-Item Short Form Survey (SF-12)
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- General health
+										value matches {
+											1.0|[local::at0005],
+											2.0|[local::at0006],
+											3.0|[local::at0007],
+											4.0|[local::at0008],
+											5.0|[local::at0009]
+										}
+									}
+									CLUSTER[at0010] matches {    -- Daily activities
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0012] occurrences matches {0..1} matches {    -- Moderate activities
+												value matches {
+													1.0|[local::at0013],
+													2.0|[local::at0014],
+													3.0|[local::at0015]
+												}
+											}
+											ELEMENT[at0016] occurrences matches {0..1} matches {    -- Climbing stairs
+												value matches {
+													1.0|[local::at0017],
+													2.0|[local::at0018],
+													3.0|[local::at0019]
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0011] matches {*}    -- Item tree
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"12-Item Short Form Survey (SF-12)">
+					description = <"The SF-12v2 Health Survey is a 12-item subset of the SF-36v2 that measures the same eight domains of health. It is a brief, reliable measure of overall health status.  It is useful in large population health surveys and has been used extensively as a screening tool.">
+					comment = <"# SF-12 Health Survey
+This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. **Answer each question by choosing just one answer**. If you are unsure how to answer a question, please give the best answer you can.">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"General health">
+					description = <"**In general, would you say your health is:** ">
+					order = <"1">
+				>
+				["at0005"] = <
+					text = <"Excellent">
+					description = <"Excellent">
+				>
+				["at0006"] = <
+					text = <"Very good">
+					description = <"Very good">
+				>
+				["at0007"] = <
+					text = <"Good">
+					description = <"Good">
+				>
+				["at0008"] = <
+					text = <"Fair">
+					description = <"Fair">
+				>
+				["at0009"] = <
+					text = <"Poor">
+					description = <"Poor">
+				>
+				["at0010"] = <
+					text = <"Daily activities">
+					description = <"**The following questions are about activities you might do during a typical day. Does your health now limit you in these activities? If so, how much?**">
+					comment = <"Display at the top of the screen for each question.">
+				>
+				["at0011"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0012"] = <
+					text = <"Moderate activities">
+					description = <"**Moderate activities** such as moving a table, pushing a vacuum cleaner, bowling, or playing golf. ">
+				>
+				["at0013"] = <
+					text = <"Yes a lot">
+					description = <"**Yes, limited a lot**">
+				>
+				["at0014"] = <
+					text = <"Yes a little">
+					description = <"**Yes, limited a little**">
+				>
+				["at0015"] = <
+					text = <"No at all">
+					description = <"**No, not limited at all**">
+				>
+				["at0016"] = <
+					text = <"Climbing stairs">
+					description = <"Climbing **several** flights of stairs">
+				>
+				["at0017"] = <
+					text = <"Yes a lot">
+					description = <"**Yes, limited a lot**">
+				>
+				["at0018"] = <
+					text = <"Yes a little">
+					description = <"**Yes, limited a little**">
+				>
+				["at0019"] = <
+					text = <"No at all">
+					description = <"**No, not limited at all**">
+				>
+			>
+		>
+	>
