@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"95347f7619e62798ec5be8a25d2896e8">
+		["MD5-CAM-1.0.1"] = <"6bdfe567c5a1cc7b0c2b8b5dc9baaf59">
 		["build_uid"] = <"a995dd0b-e638-3e4c-add1-b6ce26261a7e">
 	>
 
@@ -190,10 +190,6 @@ ontology
 	term_definitions = <
 		["en"] = <
 			items = <
-				["1"] = <
-					text = <"1">
-					description = <"1">
-				>
 				["at0000"] = <
 					text = <"12-Item Short Form Survey (SF-12)">
 					description = <"# SF-12 Health Survey
