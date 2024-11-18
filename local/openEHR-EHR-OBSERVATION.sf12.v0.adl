@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"387f6fbd2113992d948942dd9db2a09d">
+		["MD5-CAM-1.0.1"] = <"a6a86c3570a3b37be14afaae90696d12">
 		["build_uid"] = <"a995dd0b-e638-3e4c-add1-b6ce26261a7e">
 	>
 
@@ -231,15 +231,15 @@ This survey asks for your views about your health. This information will help ke
 					order = <"2">
 				>
 				["at0013"] = <
-					text = <"**Yes, limited a lot**">
+					text = <"<b>Yes, limited a lot</b>">
 					description = <"">
 				>
 				["at0014"] = <
-					text = <"**Yes, limited a little**">
+					text = <"<b>Yes, limited a little</b>">
 					description = <"">
 				>
 				["at0015"] = <
-					text = <"**No, not limited at all**">
+					text = <"<b>No, not limited at all</b>">
 					description = <"">
 				>
 				["at0016"] = <
