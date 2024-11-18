@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"74afcb1121021007bd454ae8013576a7">
+		["MD5-CAM-1.0.1"] = <"95347f7619e62798ec5be8a25d2896e8">
 		["build_uid"] = <"a995dd0b-e638-3e4c-add1-b6ce26261a7e">
 	>
 
@@ -155,7 +155,14 @@ definition
 										items cardinality matches {0..*; unordered} matches {
 											ELEMENT[at0085] occurrences matches {0..*} matches {    -- Score
 												value matches {
-													DV_QUANTITY matches {*}
+													C_DV_QUANTITY <
+														property = <[openehr::380]>
+														list = <
+															["1"] = <
+																units = <"1">
+															>
+														>
+													>
 												}
 											}
 										}
