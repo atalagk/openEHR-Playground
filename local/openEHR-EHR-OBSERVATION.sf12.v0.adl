@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"96c4703848edfdbf22b797cc9af22aca">
+		["MD5-CAM-1.0.1"] = <"c574edde55b0b3aed3031ddb7b715713">
 		["build_uid"] = <"a995dd0b-e638-3e4c-add1-b6ce26261a7e">
 	>
 
@@ -41,114 +41,119 @@ definition
 								items cardinality matches {0..*; unordered} matches {
 									ELEMENT[at0004] occurrences matches {0..1} matches {    -- General health
 										value matches {
-											1.0|[local::at0005],
-											2.0|[local::at0006],
-											3.0|[local::at0007],
-											4.0|[local::at0008],
-											5.0|[local::at0009]
+											1|[local::at0087],
+											2|[local::at0088],
+											3|[local::at0089],
+											4|[local::at0090],
+											5|[local::at0091]
 										}
 									}
 									CLUSTER[at0010] matches {    -- Daily activities
-										items cardinality matches {1..*; unordered} matches {
+										items cardinality matches {0..*; unordered} matches {
 											ELEMENT[at0012] occurrences matches {0..1} matches {    -- Moderate activities
 												value matches {
-													1.0|[local::at0013],
-													2.0|[local::at0014],
-													3.0|[local::at0015]
+													1|[local::at0013],
+													2|[local::at0014],
+													3|[local::at0015]
 												}
 											}
 											ELEMENT[at0016] occurrences matches {0..1} matches {    -- Climbing stairs
 												value matches {
-													1.0|[local::at0017],
-													2.0|[local::at0018],
-													3.0|[local::at0019]
+													1|[local::at0017],
+													2|[local::at0018],
+													3|[local::at0019]
 												}
 											}
 										}
 									}
 									CLUSTER[at0020] occurrences matches {0..1} matches {    -- Physical health
-										items cardinality matches {1..*; unordered} matches {
+										items cardinality matches {0..*; unordered} matches {
 											ELEMENT[at0029] occurrences matches {0..1} matches {    -- Accomplished less
 												value matches {
-													1.0|[local::at0030],
-													2.0|[local::at0031]
+													1|[local::at0030],
+													2|[local::at0031]
 												}
 											}
 											ELEMENT[at0021] occurrences matches {0..1} matches {    -- Limited in kind
 												value matches {
-													1.0|[local::at0022],
-													2.0|[local::at0023]
+													1|[local::at0022],
+													2|[local::at0023]
 												}
 											}
 										}
 									}
 									CLUSTER[at0032] occurrences matches {0..1} matches {    -- Emotional problems
-										items cardinality matches {1..*; unordered} matches {
+										items cardinality matches {0..*; unordered} matches {
 											ELEMENT[at0033] occurrences matches {0..1} matches {    -- Accomplished less
 												value matches {
-													1.0|[local::at0034],
-													2.0|[local::at0035]
+													1|[local::at0034],
+													2|[local::at0035]
 												}
 											}
 											ELEMENT[at0036] occurrences matches {0..1} matches {    -- Less careful
 												value matches {
-													1.0|[local::at0037],
-													2.0|[local::at0038]
+													1|[local::at0037],
+													2|[local::at0038]
 												}
 											}
 										}
 									}
 									ELEMENT[at0046] occurrences matches {0..1} matches {    -- Pain interference
 										value matches {
-											1.0|[local::at0047],
-											2.0|[local::at0048],
-											3.0|[local::at0049],
-											4.0|[local::at0050],
-											5.0|[local::at0051]
+											1|[local::at0047],
+											2|[local::at0048],
+											3|[local::at0049],
+											4|[local::at0050],
+											5|[local::at0051]
 										}
 									}
 									CLUSTER[at0039] occurrences matches {0..1} matches {    -- Feeling
-										items cardinality matches {1..*; unordered} matches {
+										items cardinality matches {0..*; unordered} matches {
 											ELEMENT[at0040] occurrences matches {0..1} matches {    -- Calm & peaceful
 												value matches {
-													1.0|[local::at0041],
-													2.0|[local::at0042],
-													3.0|[local::at0052],
-													4.0|[local::at0053],
-													5.0|[local::at0054],
-													6.0|[local::at0055]
+													1|[local::at0041],
+													2|[local::at0042],
+													3|[local::at0052],
+													4|[local::at0053],
+													5|[local::at0054],
+													6|[local::at0055]
 												}
 											}
 											ELEMENT[at0056] occurrences matches {0..1} matches {    -- A lot of energy
 												value matches {
-													1.0|[local::at0057],
-													2.0|[local::at0058],
-													3.0|[local::at0059],
-													4.0|[local::at0060],
-													5.0|[local::at0061],
-													6.0|[local::at0062]
+													1|[local::at0057],
+													2|[local::at0058],
+													3|[local::at0059],
+													4|[local::at0060],
+													5|[local::at0061],
+													6|[local::at0062]
 												}
 											}
 											ELEMENT[at0063] occurrences matches {0..1} matches {    -- Down hearted & blue
 												value matches {
-													1.0|[local::at0064],
-													2.0|[local::at0065],
-													3.0|[local::at0066],
-													4.0|[local::at0067],
-													5.0|[local::at0068],
-													6.0|[local::at0069]
+													1|[local::at0064],
+													2|[local::at0065],
+													3|[local::at0066],
+													4|[local::at0067],
+													5|[local::at0068],
+													6|[local::at0069]
 												}
 											}
 										}
 									}
 									ELEMENT[at0076] occurrences matches {0..1} matches {    -- Social activities
 										value matches {
-											1.0|[local::at0077],
-											2.0|[local::at0078],
-											3.0|[local::at0079],
-											4.0|[local::at0080],
-											5.0|[local::at0081],
-											6.0|[local::at0082]
+											1|[local::at0077],
+											2|[local::at0078],
+											3|[local::at0079],
+											4|[local::at0080],
+											5|[local::at0081],
+											6|[local::at0082]
+										}
+									}
+									CLUSTER[at0084] occurrences matches {0..1} matches {    -- Scoring
+										items cardinality matches {0..*; unordered} matches {
+											ELEMENT[at0085] occurrences matches {0..*} matches {*}    -- Score
 										}
 									}
 								}
@@ -176,9 +181,9 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"12-Item Short Form Survey (SF-12)">
-					description = <"The SF-12v2 Health Survey is a 12-item subset of the SF-36v2 that measures the same eight domains of health. It is a brief, reliable measure of overall health status.  It is useful in large population health surveys and has been used extensively as a screening tool.">
-					comment = <"# SF-12 Health Survey
+					description = <"# SF-12 Health Survey
 This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. **Answer each question by choosing just one answer**. If you are unsure how to answer a question, please give the best answer you can.">
+					comment = <"The SF-12v2 Health Survey is a 12-item subset of the SF-36v2 that measures the same eight domains of health. It is a brief, reliable measure of overall health status.  It is useful in large population health surveys and has been used extensively as a screening tool.">
 				>
 				["at0001"] = <
 					text = <"History">
@@ -197,26 +202,6 @@ This survey asks for your views about your health. This information will help ke
 					description = <"**In general, would you say your health is:** ">
 					order = <"1">
 				>
-				["at0005"] = <
-					text = <"Excellent">
-					description = <"Excellent">
-				>
-				["at0006"] = <
-					text = <"Very good">
-					description = <"Very good">
-				>
-				["at0007"] = <
-					text = <"Good">
-					description = <"Good">
-				>
-				["at0008"] = <
-					text = <"Fair">
-					description = <"Fair">
-				>
-				["at0009"] = <
-					text = <"Poor">
-					description = <"Poor">
-				>
 				["at0010"] = <
 					text = <"Daily activities">
 					description = <"**The following questions are about activities you might do during a typical day. Does your health now limit you in these activities? If so, how much?**">
@@ -231,15 +216,15 @@ This survey asks for your views about your health. This information will help ke
 					order = <"2">
 				>
 				["at0013"] = <
-					text = <"Yes a lot">
+					text = <"1">
 					description = <"**Yes, limited a lot**">
 				>
 				["at0014"] = <
-					text = <"Yes a little">
+					text = <"2">
 					description = <"**Yes, limited a little**">
 				>
 				["at0015"] = <
-					text = <"No at all">
+					text = <"3">
 					description = <"**No, not limited at all**">
 				>
 				["at0016"] = <
@@ -248,15 +233,15 @@ This survey asks for your views about your health. This information will help ke
 					order = <"3">
 				>
 				["at0017"] = <
-					text = <"Yes a lot">
+					text = <"1">
 					description = <"**Yes, limited a lot**">
 				>
 				["at0018"] = <
-					text = <"Yes a little">
+					text = <"2">
 					description = <"**Yes, limited a little**">
 				>
 				["at0019"] = <
-					text = <"No at all">
+					text = <"3">
 					description = <"**No, not limited at all**">
 				>
 				["at0020"] = <
@@ -270,11 +255,11 @@ daily activities <ins>as a result of your physical health</ins>?**">
 					order = <"5">
 				>
 				["at0022"] = <
-					text = <"Yes">
+					text = <"1">
 					description = <"**YES**">
 				>
 				["at0023"] = <
-					text = <"No">
+					text = <"2">
 					description = <"**NO**">
 				>
 				["at0029"] = <
@@ -283,11 +268,11 @@ daily activities <ins>as a result of your physical health</ins>?**">
 					order = <"4">
 				>
 				["at0030"] = <
-					text = <"Yes">
+					text = <"1">
 					description = <"**YES**">
 				>
 				["at0031"] = <
-					text = <"No">
+					text = <"2">
 					description = <"**NO**">
 				>
 				["at0032"] = <
@@ -301,11 +286,11 @@ daily activities <ins>as a result of any emotional problems</ins> (such as feeli
 					order = <"6">
 				>
 				["at0034"] = <
-					text = <"Yes">
+					text = <"1">
 					description = <"**YES**">
 				>
 				["at0035"] = <
-					text = <"No">
+					text = <"2">
 					description = <"**NO**">
 				>
 				["at0036"] = <
@@ -314,11 +299,11 @@ daily activities <ins>as a result of any emotional problems</ins> (such as feeli
 					order = <"7">
 				>
 				["at0037"] = <
-					text = <"Yes">
+					text = <"1">
 					description = <"**YES**">
 				>
 				["at0038"] = <
-					text = <"No">
+					text = <"2">
 					description = <"**NO**">
 				>
 				["at0039"] = <
@@ -334,11 +319,11 @@ Have you felt calm & peaceful?">
 					order = <"9">
 				>
 				["at0041"] = <
-					text = <"All">
+					text = <"1">
 					description = <"All of the time">
 				>
 				["at0042"] = <
-					text = <"Most">
+					text = <"2">
 					description = <"Most of the time">
 				>
 				["at0046"] = <
@@ -347,39 +332,39 @@ Have you felt calm & peaceful?">
 					order = <"8">
 				>
 				["at0047"] = <
-					text = <"Not at all">
+					text = <"1">
 					description = <"Not at all">
 				>
 				["at0048"] = <
-					text = <"A little bit">
+					text = <"2">
 					description = <"A little bit">
 				>
 				["at0049"] = <
-					text = <"Moderately">
+					text = <"3">
 					description = <"Moderately">
 				>
 				["at0050"] = <
-					text = <"Quite a bit">
+					text = <"4">
 					description = <"Quite a bit">
 				>
 				["at0051"] = <
-					text = <"Extremely">
+					text = <"5">
 					description = <"Extremely">
 				>
 				["at0052"] = <
-					text = <"Good bit">
+					text = <"3">
 					description = <"A good bit of the time">
 				>
 				["at0053"] = <
-					text = <"Some">
+					text = <"4">
 					description = <"Some of the time">
 				>
 				["at0054"] = <
-					text = <"Little">
+					text = <"5">
 					description = <"A little of the time">
 				>
 				["at0055"] = <
-					text = <"None">
+					text = <"6">
 					description = <"None of the time">
 				>
 				["at0056"] = <
@@ -389,27 +374,27 @@ Did you have a lot of energy? ">
 					order = <"10">
 				>
 				["at0057"] = <
-					text = <"All">
+					text = <"1">
 					description = <"All of the time">
 				>
 				["at0058"] = <
-					text = <"Most">
+					text = <"2">
 					description = <"Most of the time">
 				>
 				["at0059"] = <
-					text = <"Good bit">
+					text = <"3">
 					description = <"A good bit of the time">
 				>
 				["at0060"] = <
-					text = <"Some">
+					text = <"4">
 					description = <"Some of the time">
 				>
 				["at0061"] = <
-					text = <"Little">
+					text = <"5">
 					description = <"A little of the time">
 				>
 				["at0062"] = <
-					text = <"None">
+					text = <"6">
 					description = <"None of the time">
 				>
 				["at0063"] = <
@@ -419,27 +404,27 @@ Have you felt down-hearted and blue?">
 					order = <"11">
 				>
 				["at0064"] = <
-					text = <"All">
+					text = <"1">
 					description = <"All of the time">
 				>
 				["at0065"] = <
-					text = <"Most">
+					text = <"2">
 					description = <"Most of the time">
 				>
 				["at0066"] = <
-					text = <"Good bit">
+					text = <"3">
 					description = <"A good bit of the time">
 				>
 				["at0067"] = <
-					text = <"Some">
+					text = <"4">
 					description = <"Some of the time">
 				>
 				["at0068"] = <
-					text = <"Little">
+					text = <"5">
 					description = <"A little of the time">
 				>
 				["at0069"] = <
-					text = <"None">
+					text = <"6">
 					description = <"None of the time">
 				>
 				["at0076"] = <
@@ -448,32 +433,62 @@ Have you felt down-hearted and blue?">
 					order = <"12">
 				>
 				["at0077"] = <
-					text = <"All">
+					text = <"1">
 					description = <"All of the time">
 				>
 				["at0078"] = <
-					text = <"Most">
+					text = <"2">
 					description = <"Most of the time">
 				>
 				["at0079"] = <
-					text = <"Good bit">
+					text = <"3">
 					description = <"A good bit of the time">
 				>
 				["at0080"] = <
-					text = <"Some">
+					text = <"4">
 					description = <"Some of the time">
 				>
 				["at0081"] = <
-					text = <"Little">
+					text = <"5">
 					description = <"A little of the time">
 				>
 				["at0082"] = <
-					text = <"None">
+					text = <"6">
 					description = <"None of the time">
 				>
 				["at0083"] = <
 					text = <"PRM Properties">
 					description = <"Slot in the list of properties that apply to the PRM.">
+				>
+				["at0084"] = <
+					text = <"Scoring">
+					description = <"Use markdown formatted instructions or other info that would apply to underlying score(s)">
+					comment = <"Capture score(s); which may be a single score or scores by domain or other types">
+				>
+				["at0085"] = <
+					text = <"Score">
+					description = <"**TOTAL SCORE:**">
+					comment = <"Determine type of score and rename accordingly; use markdown for specific formatting. For multiple scores create as many items as needed (Cardinality is {0..*}">
+				>
+				["at0087"] = <
+					text = <"1">
+					description = <"Excellent">
+				>
+				["at0088"] = <
+					text = <"2">
+					description = <"Very good">
+				>
+				["at0089"] = <
+					text = <"3">
+					description = <"Good">
+				>
+				["at0090"] = <
+					text = <"4">
+					description = <"Fair">
+				>
+				["at0091"] = <
+					text = <"5">
+					description = <"Poor">
 				>
 			>
 		>
