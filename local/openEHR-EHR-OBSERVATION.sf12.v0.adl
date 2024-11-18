@@ -27,7 +27,7 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["build_uid"] = <"a995dd0b-e638-3e4c-add1-b6ce26261a7e">
-		["MD5-CAM-1.0.1"] = <"062c1029ff9e1ed0daff5a8799407f70">
+		["MD5-CAM-1.0.1"] = <"dd267ec79eadccd172505a346b8ac03f">
 	>
 
 definition
@@ -141,13 +141,14 @@ definition
 											}
 										}
 									}
-									ELEMENT[at0070] occurrences matches {0..1} matches {    -- Social activities
+									ELEMENT[at0076] occurrences matches {0..1} matches {    -- Social activities
 										value matches {
-											1.0|[local::at0071],
-											2.0|[local::at0072],
-											3.0|[local::at0073],
-											4.0|[local::at0074],
-											5.0|[local::at0075]
+											1.0|[local::at0077],
+											2.0|[local::at0078],
+											3.0|[local::at0079],
+											4.0|[local::at0080],
+											5.0|[local::at0081],
+											6.0|[local::at0082]
 										}
 									}
 								}
@@ -221,6 +222,7 @@ This survey asks for your views about your health. This information will help ke
 				["at0012"] = <
 					text = <"Moderate activities">
 					description = <"**Moderate activities** such as moving a table, pushing a vacuum cleaner, bowling, or playing golf. ">
+					order = <"2">
 				>
 				["at0013"] = <
 					text = <"Yes a lot">
@@ -237,6 +239,7 @@ This survey asks for your views about your health. This information will help ke
 				["at0016"] = <
 					text = <"Climbing stairs">
 					description = <"Climbing **several** flights of stairs">
+					order = <"3">
 				>
 				["at0017"] = <
 					text = <"Yes a lot">
@@ -259,6 +262,7 @@ daily activities <ins>as a result of your physical health</ins>?**">
 				["at0021"] = <
 					text = <"Limited in kind">
 					description = <"Were limited in the **kind** of work or other activities.">
+					order = <"5">
 				>
 				["at0022"] = <
 					text = <"Yes">
@@ -271,6 +275,7 @@ daily activities <ins>as a result of your physical health</ins>?**">
 				["at0029"] = <
 					text = <"Accomplished less">
 					description = <"**Accomplished less** than you would like.">
+					order = <"4">
 				>
 				["at0030"] = <
 					text = <"Yes">
@@ -289,6 +294,7 @@ daily activities <ins>as a result of your physical health</ins>?**">
 				["at0033"] = <
 					text = <"Accomplished less">
 					description = <"**Accomplished less** than you would like.">
+					order = <"6">
 				>
 				["at0034"] = <
 					text = <"Yes">
@@ -301,6 +307,7 @@ daily activities <ins>as a result of your physical health</ins>?**">
 				["at0036"] = <
 					text = <"Less careful">
 					description = <"Did work or activities **less carefully than usual**.">
+					order = <"7">
 				>
 				["at0037"] = <
 					text = <"Yes">
@@ -320,6 +327,7 @@ daily activities <ins>as a result of your physical health</ins>?**">
 					text = <"Calm & peaceful">
 					description = <"**How much of the time during the <ins>past 4 weeks</ins>…**
 Have you felt calm & peaceful?">
+					order = <"9">
 				>
 				["at0041"] = <
 					text = <"All">
@@ -333,6 +341,7 @@ Have you felt calm & peaceful?">
 					text = <"Pain interference">
 					description = <"**During the <ins>past 4 weeks</ins>, how much <ins>did pain interfere</ins> with your normal work (including work outside
 the home and housework)?**">
+					order = <"8">
 				>
 				["at0047"] = <
 					text = <"Not at all">
@@ -374,6 +383,7 @@ the home and housework)?**">
 					text = <"A lot of energy">
 					description = <"**How much of the time during the <ins>past 4 weeks</ins>…**
 Did you have a lot of energy? ">
+					order = <"10">
 				>
 				["at0057"] = <
 					text = <"All">
@@ -402,7 +412,8 @@ Did you have a lot of energy? ">
 				["at0063"] = <
 					text = <"Down hearted & blue">
 					description = <"**How much of the time during the <ins>past 4 weeks</ins>…**
-. Have you felt down-hearted and blue?">
+Have you felt down-hearted and blue?">
+					order = <"11">
 				>
 				["at0064"] = <
 					text = <"All">
@@ -428,30 +439,34 @@ Did you have a lot of energy? ">
 					text = <"None">
 					description = <"None of the time">
 				>
-				["at0070"] = <
+				["at0076"] = <
 					text = <"Social activities">
-					description = <"**During the <ins>past 4 weeks</ins>, how much <ins>did pain interfere</ins> with your normal work (including work outside
-the home and housework)?**">
+					description = <"**During the <ins>past 4 weeks</ins>, how much of the time has your <ins>physical health or emotional problems</ins> interfered with your social activities (like visiting friends, relatives, etc.)?**">
+					order = <"12">
 				>
-				["at0071"] = <
-					text = <"Not at all">
-					description = <"Not at all">
+				["at0077"] = <
+					text = <"All">
+					description = <"All of the time">
 				>
-				["at0072"] = <
-					text = <"A little bit">
-					description = <"A little bit">
+				["at0078"] = <
+					text = <"Most">
+					description = <"Most of the time">
 				>
-				["at0073"] = <
-					text = <"Moderately">
-					description = <"Moderately">
+				["at0079"] = <
+					text = <"Good bit">
+					description = <"A good bit of the time">
 				>
-				["at0074"] = <
-					text = <"Quite a bit">
-					description = <"Quite a bit">
+				["at0080"] = <
+					text = <"Some">
+					description = <"Some of the time">
 				>
-				["at0075"] = <
-					text = <"Extremely">
-					description = <"Extremely">
+				["at0081"] = <
+					text = <"Little">
+					description = <"A little of the time">
+				>
+				["at0082"] = <
+					text = <"None">
+					description = <"None of the time">
 				>
 			>
 		>
