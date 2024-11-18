@@ -25,7 +25,7 @@
       "sem_ver" : "1.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "93D7156AD670461B54017CE2CB55ECAF",
-      "MD5-CAM-1.0.1" : "9941b62b25bc254b28c707168fa7792d"
+      "MD5-CAM-1.0.1" : "d4cba48356eb2d3ea6435a588efbf928"
     },
     "details" : {
       "nn" : {
@@ -232,7 +232,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "6bdfe567c5a1cc7b0c2b8b5dc9baaf59"
+        "PARENT:MD5-CAM-1.0.1" : "2ca9a81dadc2552ada113b3589472c0a"
       },
       "details" : {
         "en" : {
@@ -408,15 +408,7 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : {
-          "at0085.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0085.1",
-            "text" : "Score",
-            "comment" : "Determine type of score and rename accordingly; use markdown for specific formatting. For multiple scores create as many items as needed (Cardinality is {0..*}",
-            "description" : ""
-          }
-        }
+        "en" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
