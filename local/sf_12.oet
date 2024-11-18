@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><template xmlns="openEHR/v1/Template">
     <id>c9bcb0e6-a2f1-404a-92a8-522256277f36</id>
-    <name>generic_prms</name>
+    <name>sf_12</name>
     <description>
         <original_author>
             <item>
@@ -45,7 +45,7 @@
             </item>
             <item>
                 <key>sem_ver</key>
-                <value>0.2.1</value>
+                <value>2.0.0</value>
             </item>
             <item>
                 <key>build_uid</key>
@@ -57,7 +57,7 @@
             </item>
             <item>
                 <key>MD5-CAM-1.0.1</key>
-                <value>4e1f741d1c69443c2551b3099977b06d</value>
+                <value>9941b62b25bc254b28c707168fa7792d</value>
             </item>
             <item>
                 <key>original_language</key>
@@ -89,27 +89,11 @@
             </item>
         </items>
     </annotations>
-    <annotations path="[openEHR-EHR-COMPOSITION.self_reported_data.v1]/content[openEHR-EHR-OBSERVATION.sf12.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0032]/items[at0036]">
-        <items>
-            <item>
-                <key>order</key>
-                <value>7</value>
-            </item>
-        </items>
-    </annotations>
     <annotations path="[openEHR-EHR-COMPOSITION.self_reported_data.v1]/content[openEHR-EHR-OBSERVATION.sf12.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0010]/items[at0016]">
         <items>
             <item>
                 <key>order</key>
                 <value>3</value>
-            </item>
-        </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-COMPOSITION.self_reported_data.v1]/content[openEHR-EHR-OBSERVATION.sf12.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0020]/items[at0021]">
-        <items>
-            <item>
-                <key>order</key>
-                <value>5</value>
             </item>
         </items>
     </annotations>
@@ -145,11 +129,11 @@
             </item>
         </items>
     </annotations>
-    <annotations path="[openEHR-EHR-COMPOSITION.self_reported_data.v1]/content[openEHR-EHR-OBSERVATION.sf12.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0020]/items[at0029]">
+    <annotations path="[openEHR-EHR-COMPOSITION.self_reported_data.v1]/content[openEHR-EHR-OBSERVATION.sf12.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0032]/items[at0036]">
         <items>
             <item>
                 <key>order</key>
-                <value>4</value>
+                <value>7</value>
             </item>
         </items>
     </annotations>
@@ -161,8 +145,27 @@
             </item>
         </items>
     </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.self_reported_data.v1]/content[openEHR-EHR-OBSERVATION.sf12.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0020]/items[at0021]">
+        <items>
+            <item>
+                <key>order</key>
+                <value>5</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.self_reported_data.v1]/content[openEHR-EHR-OBSERVATION.sf12.v0]/data[at0001]/events[at0002]/data[at0003]/items[at0020]/items[at0029]">
+        <items>
+            <item>
+                <key>order</key>
+                <value>4</value>
+            </item>
+        </items>
+    </annotations>
     <definition archetype_id="openEHR-EHR-COMPOSITION.self_reported_data.v1" xmlns:tem="openEHR/v1/Template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:COMPOSITION">
         <Content archetype_id="openEHR-EHR-OBSERVATION.sf12.v0" max="1" path="/content" xsi:type="tem:OBSERVATION">
+            <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0084]/items[at0085]">
+                <constraint xsi:type="tem:quantityConstraint"/>
+            </Rule>
             <Items archetype_id="openEHR-EHR-CLUSTER.prm_properties.v0" max="1" path="/protocol[at0011]/items[at0083]" xsi:type="tem:CLUSTER"/>
         </Content>
     </definition>
@@ -170,7 +173,7 @@
         <digest id="MD5-CAM-1.0.1">93D7156AD670461B54017CE2CB55ECAF</digest>
     </integrity_checks>
     <integrity_checks archetype_id="openEHR-EHR-OBSERVATION.sf12.v0" xmlns:tem="openEHR/v1/Template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:ArchetypeIntegrity">
-        <digest id="MD5-CAM-1.0.1">ea2a7aa2fef1e81a5f6c8a1c2654fc9f</digest>
+        <digest id="MD5-CAM-1.0.1">20c2a0bb4c7ccc0c1b249335492b468e</digest>
     </integrity_checks>
     <integrity_checks archetype_id="openEHR-EHR-CLUSTER.prm_properties.v0" xmlns:tem="openEHR/v1/Template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:ArchetypeIntegrity">
         <digest id="MD5-CAM-1.0.1">06015e089f00e82a8fc4e19211ad292c</digest>
