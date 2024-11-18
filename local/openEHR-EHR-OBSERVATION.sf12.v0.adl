@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"030680d4d17158e40c866e108b098035">
+		["MD5-CAM-1.0.1"] = <"c574edde55b0b3aed3031ddb7b715713">
 		["build_uid"] = <"a995dd0b-e638-3e4c-add1-b6ce26261a7e">
 	>
 
@@ -41,27 +41,27 @@ definition
 								items cardinality matches {0..*; unordered} matches {
 									ELEMENT[at0004] occurrences matches {0..1} matches {    -- General health
 										value matches {
-											1.0|[local::at0005],
-											2.0|[local::at0006],
-											3.0|[local::at0007],
-											4.0|[local::at0008],
-											5.0|[local::at0009]
+											1|[local::at0087],
+											2|[local::at0088],
+											3|[local::at0089],
+											4|[local::at0090],
+											5|[local::at0091]
 										}
 									}
 									CLUSTER[at0010] matches {    -- Daily activities
 										items cardinality matches {0..*; unordered} matches {
 											ELEMENT[at0012] occurrences matches {0..1} matches {    -- Moderate activities
 												value matches {
-													1.0|[local::at0013],
-													2.0|[local::at0014],
-													3.0|[local::at0015]
+													1|[local::at0013],
+													2|[local::at0014],
+													3|[local::at0015]
 												}
 											}
 											ELEMENT[at0016] occurrences matches {0..1} matches {    -- Climbing stairs
 												value matches {
-													1.0|[local::at0017],
-													2.0|[local::at0018],
-													3.0|[local::at0019]
+													1|[local::at0017],
+													2|[local::at0018],
+													3|[local::at0019]
 												}
 											}
 										}
@@ -70,14 +70,14 @@ definition
 										items cardinality matches {0..*; unordered} matches {
 											ELEMENT[at0029] occurrences matches {0..1} matches {    -- Accomplished less
 												value matches {
-													1.0|[local::at0030],
-													2.0|[local::at0031]
+													1|[local::at0030],
+													2|[local::at0031]
 												}
 											}
 											ELEMENT[at0021] occurrences matches {0..1} matches {    -- Limited in kind
 												value matches {
-													1.0|[local::at0022],
-													2.0|[local::at0023]
+													1|[local::at0022],
+													2|[local::at0023]
 												}
 											}
 										}
@@ -86,69 +86,69 @@ definition
 										items cardinality matches {0..*; unordered} matches {
 											ELEMENT[at0033] occurrences matches {0..1} matches {    -- Accomplished less
 												value matches {
-													1.0|[local::at0034],
-													2.0|[local::at0035]
+													1|[local::at0034],
+													2|[local::at0035]
 												}
 											}
 											ELEMENT[at0036] occurrences matches {0..1} matches {    -- Less careful
 												value matches {
-													1.0|[local::at0037],
-													2.0|[local::at0038]
+													1|[local::at0037],
+													2|[local::at0038]
 												}
 											}
 										}
 									}
 									ELEMENT[at0046] occurrences matches {0..1} matches {    -- Pain interference
 										value matches {
-											1.0|[local::at0047],
-											2.0|[local::at0048],
-											3.0|[local::at0049],
-											4.0|[local::at0050],
-											5.0|[local::at0051]
+											1|[local::at0047],
+											2|[local::at0048],
+											3|[local::at0049],
+											4|[local::at0050],
+											5|[local::at0051]
 										}
 									}
 									CLUSTER[at0039] occurrences matches {0..1} matches {    -- Feeling
 										items cardinality matches {0..*; unordered} matches {
 											ELEMENT[at0040] occurrences matches {0..1} matches {    -- Calm & peaceful
 												value matches {
-													1.0|[local::at0041],
-													2.0|[local::at0042],
-													3.0|[local::at0052],
-													4.0|[local::at0053],
-													5.0|[local::at0054],
-													6.0|[local::at0055]
+													1|[local::at0041],
+													2|[local::at0042],
+													3|[local::at0052],
+													4|[local::at0053],
+													5|[local::at0054],
+													6|[local::at0055]
 												}
 											}
 											ELEMENT[at0056] occurrences matches {0..1} matches {    -- A lot of energy
 												value matches {
-													1.0|[local::at0057],
-													2.0|[local::at0058],
-													3.0|[local::at0059],
-													4.0|[local::at0060],
-													5.0|[local::at0061],
-													6.0|[local::at0062]
+													1|[local::at0057],
+													2|[local::at0058],
+													3|[local::at0059],
+													4|[local::at0060],
+													5|[local::at0061],
+													6|[local::at0062]
 												}
 											}
 											ELEMENT[at0063] occurrences matches {0..1} matches {    -- Down hearted & blue
 												value matches {
-													1.0|[local::at0064],
-													2.0|[local::at0065],
-													3.0|[local::at0066],
-													4.0|[local::at0067],
-													5.0|[local::at0068],
-													6.0|[local::at0069]
+													1|[local::at0064],
+													2|[local::at0065],
+													3|[local::at0066],
+													4|[local::at0067],
+													5|[local::at0068],
+													6|[local::at0069]
 												}
 											}
 										}
 									}
 									ELEMENT[at0076] occurrences matches {0..1} matches {    -- Social activities
 										value matches {
-											1.0|[local::at0077],
-											2.0|[local::at0078],
-											3.0|[local::at0079],
-											4.0|[local::at0080],
-											5.0|[local::at0081],
-											6.0|[local::at0082]
+											1|[local::at0077],
+											2|[local::at0078],
+											3|[local::at0079],
+											4|[local::at0080],
+											5|[local::at0081],
+											6|[local::at0082]
 										}
 									}
 									CLUSTER[at0084] occurrences matches {0..1} matches {    -- Scoring
@@ -201,26 +201,6 @@ This survey asks for your views about your health. This information will help ke
 					text = <"General health">
 					description = <"**In general, would you say your health is:** ">
 					order = <"1">
-				>
-				["at0005"] = <
-					text = <"1">
-					description = <"Excellent">
-				>
-				["at0006"] = <
-					text = <"2">
-					description = <"Very good">
-				>
-				["at0007"] = <
-					text = <"3">
-					description = <"Good">
-				>
-				["at0008"] = <
-					text = <"4">
-					description = <"Fair">
-				>
-				["at0009"] = <
-					text = <"5">
-					description = <"Poor">
 				>
 				["at0010"] = <
 					text = <"Daily activities">
@@ -489,6 +469,26 @@ Have you felt down-hearted and blue?">
 					text = <"Score">
 					description = <"**TOTAL SCORE:**">
 					comment = <"Determine type of score and rename accordingly; use markdown for specific formatting. For multiple scores create as many items as needed (Cardinality is {0..*}">
+				>
+				["at0087"] = <
+					text = <"1">
+					description = <"Excellent">
+				>
+				["at0088"] = <
+					text = <"2">
+					description = <"Very good">
+				>
+				["at0089"] = <
+					text = <"3">
+					description = <"Good">
+				>
+				["at0090"] = <
+					text = <"4">
+					description = <"Fair">
+				>
+				["at0091"] = <
+					text = <"5">
+					description = <"Poor">
 				>
 			>
 		>
