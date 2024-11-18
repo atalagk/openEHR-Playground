@@ -25,7 +25,7 @@
       "sem_ver" : "2.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "93D7156AD670461B54017CE2CB55ECAF",
-      "MD5-CAM-1.0.1" : "87b06594bcb733528b377cfe440d675f"
+      "MD5-CAM-1.0.1" : "94ed45a1ed2a515b3f79636cbf17b9f0"
     },
     "details" : {
       "nn" : {
@@ -232,7 +232,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "387f6fbd2113992d948942dd9db2a09d"
+        "PARENT:MD5-CAM-1.0.1" : "a6a86c3570a3b37be14afaae90696d12"
       },
       "details" : {
         "en" : {
