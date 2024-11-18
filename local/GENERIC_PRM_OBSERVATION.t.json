@@ -1,0 +1,304 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "0800cc46-e992-44bc-839c-0984d0c734be",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "name" : "Koray Atalag",
+      "organisation" : "Galata-Digital",
+      "email" : "koray.atalag@gmail.com",
+      "date" : "2024-11-18"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "",
+      "custodian_organisation" : "",
+      "original_namespace" : "",
+      "original_publisher" : "",
+      "custodian_namespace" : "",
+      "sem_ver" : "1.0.0",
+      "build_uid" : "",
+      "MD5-CAM-1.0.1" : "641472cf025799294a923fa9691d013c",
+      "PARENT:MD5-CAM-1.0.1" : "96c4703848edfdbf22b797cc9af22aca"
+    },
+    "details" : {
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "annotations" : {
+    "@type" : "RESOURCE_ANNOTATIONS",
+    "documentation" : {
+      "en" : {
+        "/data[at0001]/events[at0002]/data[at0003]/items[at0039]/items[at0063]" : {
+          "order" : "11"
+        },
+        "/data[at0001]/events[at0002]/data[at0003]/items[at0004]" : {
+          "order" : "1"
+        },
+        "/data[at0001]/events[at0002]/data[at0003]/items[at0039]/items[at0040]" : {
+          "order" : "9"
+        },
+        "/data[at0001]/events[at0002]/data[at0003]/items[at0032]/items[at0036]" : {
+          "order" : "7"
+        },
+        "/data[at0001]/events[at0002]/data[at0003]/items[at0010]/items[at0016]" : {
+          "order" : "3"
+        },
+        "/data[at0001]/events[at0002]/data[at0003]/items[at0020]/items[at0021]" : {
+          "order" : "5"
+        },
+        "/data[at0001]/events[at0002]/data[at0003]/items[at0039]/items[at0056]" : {
+          "order" : "10"
+        },
+        "/data[at0001]/events[at0002]/data[at0003]/items[at0010]/items[at0012]" : {
+          "order" : "2"
+        },
+        "/data[at0001]/events[at0002]/data[at0003]/items[at0046]" : {
+          "order" : "8"
+        },
+        "/data[at0001]/events[at0002]/data[at0003]/items[at0076]" : {
+          "order" : "12"
+        },
+        "/data[at0001]/events[at0002]/data[at0003]/items[at0020]/items[at0029]" : {
+          "order" : "4"
+        },
+        "/data[at0001]/events[at0002]/data[at0003]/items[at0032]/items[at0033]" : {
+          "order" : "6"
+        }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-OBSERVATION.sf12.v0",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-OBSERVATION.t_sf12.v0"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "OBSERVATION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "data",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "HISTORY",
+        "nodeId" : "at0001",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "events",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "EVENT",
+            "occurrences" : "0..*",
+            "nodeId" : "at0002",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "protocol",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0011",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "ARCHETYPE_SLOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0083",
+            "includes" : [ {
+              "@type" : "ASSERTION",
+              "stringExpression" : "archetype_id/value matches {/.*/}",
+              "expression" : {
+                "@type" : "BINARY_OPERATOR",
+                "type" : "BOOLEAN",
+                "operator" : "matches",
+                "leftOperand" : {
+                  "@type" : "MODEL_REFERENCE",
+                  "type" : "STRING",
+                  "precedenceOverriden" : false,
+                  "referenceType" : "Attribute",
+                  "path" : "archetype_id/value"
+                },
+                "rightOperand" : {
+                  "@type" : "CONSTRAINT",
+                  "type" : "STRING",
+                  "precedenceOverriden" : false,
+                  "referenceType" : "Constraint",
+                  "item" : {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "/.*/" ]
+                  }
+                },
+                "precedenceOverriden" : false
+              },
+              "variables" : [ ]
+            } ],
+            "excludes" : [ ],
+            "closed" : false
+          }, {
+            "@type" : "C_ARCHETYPE_ROOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0083.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ],
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-prm_properties-001.v0",
+            "referenceType" : "archetypeOverlay"
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0010" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0010",
+          "text" : "Daily activities",
+          "description" : "**The following questions are about activities you might do during a typical day. Does your health now limit you in these activities? If so, how much?**",
+          "comment" : "Display at the top of the screen for each question."
+        },
+        "at0020" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0020",
+          "text" : "Physical health",
+          "description" : "**During the <ins>past 4 weeks</ins>, have you had any of the following problems with your work or other regular\ndaily activities <ins>as a result of your physical health</ins>?**",
+          "comment" : "Display at the top of the screen for each question."
+        },
+        "at0032" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0032",
+          "text" : "Emotional problems",
+          "description" : "**During the <ins>past 4 weeks</ins>, have you had any of the following problems with your work or other regular\ndaily activities <ins>as a result of your physical health</ins>?**",
+          "comment" : "Display at the top of the screen for each question."
+        },
+        "at0046" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0046",
+          "text" : "Pain interference",
+          "description" : "**During the <ins>past 4 weeks</ins>, how much <ins>did pain interfere</ins> with your normal work (including work outside\nthe home and housework)?**",
+          "order" : "8"
+        },
+        "at0083" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0083",
+          "text" : "PRM Properties",
+          "description" : "An exhaustive list of properties that apply to the PRM"
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "12-Item Short Form Survey (SF-12)",
+          "description" : "# SF-12 Health Survey\nThis survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. **Answer each question by choosing just one answer**. If you are unsure how to answer a question, please give the best answer you can.",
+          "comment" : "The SF-12v2 Health Survey is a 12-item subset of the SF-36v2 that measures the same eight domains of health. It is a brief, reliable measure of overall health status.  It is useful in large population health surveys and has been used extensively as a screening tool."
+        },
+        "at0083.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0083.1",
+          "text" : "PRM Properties",
+          "description" : "An exhaustive list of properties that apply to the PRM"
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "41e58525-b54b-3858-93e5-524bbd5c48af",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "GENERIC_PRM_OBSERVATION",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "d21135f4-8294-42ba-b0cd-47efda018731",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "ef8c4e5f2eca02a1347465c395089eeb"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.prm_properties.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-prm_properties-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "d376d74c-f960-3067-bade-2da4e5ec7819",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ ]
+}
