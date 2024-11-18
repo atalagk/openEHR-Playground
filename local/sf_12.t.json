@@ -22,10 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "93D7156AD670461B54017CE2CB55ECAF",
-      "MD5-CAM-1.0.1" : "6221214f3b78dfde19b82fc561f0e9d8"
+      "MD5-CAM-1.0.1" : "87b06594bcb733528b377cfe440d675f"
     },
     "details" : {
       "nn" : {
@@ -232,7 +232,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1ed841920120263b863c9e650704d9c9"
+        "PARENT:MD5-CAM-1.0.1" : "387f6fbd2113992d948942dd9db2a09d"
       },
       "details" : {
         "en" : {
@@ -262,14 +262,8 @@
           "/data[at0001]/events[at0002]/data[at0003]/items[at0039]/items[at0040]" : {
             "order" : "9"
           },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0032]/items[at0036]" : {
-            "order" : "7"
-          },
           "/data[at0001]/events[at0002]/data[at0003]/items[at0010]/items[at0016]" : {
             "order" : "3"
-          },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0020]/items[at0021]" : {
-            "order" : "5"
           },
           "/data[at0001]/events[at0002]/data[at0003]/items[at0039]/items[at0056]" : {
             "order" : "10"
@@ -283,11 +277,17 @@
           "/data[at0001]/events[at0002]/data[at0003]/items[at0076]" : {
             "order" : "12"
           },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0020]/items[at0029]" : {
-            "order" : "4"
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0032.1]/items[at0036]" : {
+            "order" : "7"
           },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0032]/items[at0033]" : {
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0032.1]/items[at0033.1]" : {
             "order" : "6"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0020.1]/items[at0021]" : {
+            "order" : "5"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0020.1]/items[at0029]" : {
+            "order" : "4"
           }
         }
       }
@@ -327,6 +327,81 @@
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "items",
                     "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0020.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0032.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0033.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_SCALE",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ {
+                                "@type" : "C_ATTRIBUTE_TUPLE",
+                                "members" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "value",
+                                  "children" : [ ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "symbol",
+                                  "children" : [ ]
+                                } ],
+                                "tuples" : [ {
+                                  "@type" : "C_PRIMITIVE_TUPLE",
+                                  "members" : [ {
+                                    "@type" : "C_REAL",
+                                    "constraint" : [ {
+                                      "lower" : 1.0,
+                                      "upper" : 1.0,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  }, {
+                                    "@type" : "C_TERMINOLOGY_CODE",
+                                    "constraint" : [ "at0034" ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_PRIMITIVE_TUPLE",
+                                  "members" : [ {
+                                    "@type" : "C_REAL",
+                                    "constraint" : [ {
+                                      "lower" : 2.0,
+                                      "upper" : 2.0,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  }, {
+                                    "@type" : "C_TERMINOLOGY_CODE",
+                                    "constraint" : [ "at0035" ]
+                                  } ]
+                                } ]
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
                       "nodeId" : "at0084",
