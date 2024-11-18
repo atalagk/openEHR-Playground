@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"96c4703848edfdbf22b797cc9af22aca">
+		["MD5-CAM-1.0.1"] = <"c8cbed963c495f9442b781a012296225">
 		["build_uid"] = <"a995dd0b-e638-3e4c-add1-b6ce26261a7e">
 	>
 
@@ -176,9 +176,9 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"12-Item Short Form Survey (SF-12)">
-					description = <"The SF-12v2 Health Survey is a 12-item subset of the SF-36v2 that measures the same eight domains of health. It is a brief, reliable measure of overall health status.  It is useful in large population health surveys and has been used extensively as a screening tool.">
-					comment = <"# SF-12 Health Survey
+					description = <"# SF-12 Health Survey
 This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. **Answer each question by choosing just one answer**. If you are unsure how to answer a question, please give the best answer you can.">
+					comment = <"The SF-12v2 Health Survey is a 12-item subset of the SF-36v2 that measures the same eight domains of health. It is a brief, reliable measure of overall health status.  It is useful in large population health surveys and has been used extensively as a screening tool.">
 				>
 				["at0001"] = <
 					text = <"History">
