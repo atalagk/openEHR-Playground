@@ -1,0 +1,251 @@
+archetype (adl_version=1.4; uid=cce2d3e9-28aa-4eb1-b377-eb286661b30b)
+	openEHR-EHR-CLUSTER.prm_properties.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2024-11-18">
+		["name"] = <"Koray Atalag">
+		["organisation"] = <"Galata-Digital">
+		["email"] = <"koray.atalag@gmail.com">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"06015e089f00e82a8fc4e19211ad292c">
+		["build_uid"] = <"d376d74c-f960-3067-bade-2da4e5ec7819">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Patient Reported Measures (PRM) Properties
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Description
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0017] occurrences matches {0..1} matches {    -- Type
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Authors
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0018] occurrences matches {0..1} matches {    -- Copyright
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Use condition
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0014] occurrences matches {0..1} matches {    -- Translations
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Electronic version
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Administration
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0019] occurrences matches {0..1} matches {    -- Target cohort
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Number of items
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Time to complete
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0016] occurrences matches {0..1} matches {    -- Therapeutic areas
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Domains & Categories
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Item scales
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0010] occurrences matches {0..1} matches {    -- Scoring
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0011] occurrences matches {0..1} matches {    -- CAT version
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0012] occurrences matches {0..1} matches {    -- Psychometric properties
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0015] occurrences matches {0..1} matches {    -- References
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0013] occurrences matches {0..1} matches {    -- Related PRMs
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Patient Reported Measures (PRM) Properties">
+					description = <"prm_properties">
+				>
+				["at0001"] = <
+					text = <"Authors">
+					description = <"">
+					comment = <"Author's name and contact information">
+				>
+				["at0002"] = <
+					text = <"Use condition">
+					description = <"">
+					comment = <"Licensing and cost including translations for electronic administration">
+				>
+				["at0003"] = <
+					text = <"Administration">
+					description = <"">
+					comment = <"Self-administered or via proxy (family member, legal guardian, caregiver, interviewer)">
+				>
+				["at0004"] = <
+					text = <"Description">
+					description = <"Derived from the Medical Outcomes Study 36-Item Short Form Health Survey (SF-36®) in 1996 (SF-12v1®)
+Modified in 2000 (SF-12v2® - version currently used)
+Developed to be a much shorter, yet valid, alternative to the SF-36® for use in large surveys of general and specific populations as well as large longitudinal studies of health outcomes">
+					comment = <"full description">
+				>
+				["at0005"] = <
+					text = <"Number of items">
+					description = <"">
+					comment = <"Number of questions">
+				>
+				["at0006"] = <
+					text = <"Time to complete">
+					description = <"">
+					comment = <"Time to complete in minutes">
+				>
+				["at0007"] = <
+					text = <"Domains & Categories">
+					description = <"">
+					comment = <"Multiple domains could be listed (e.g. emotional status, mobility, dependence etc.); possibly can use standard list but this is not used consistently">
+				>
+				["at0008"] = <
+					text = <"Electronic version">
+					description = <"">
+					comment = <"Existing electronic migration guides (eBooklets)">
+				>
+				["at0009"] = <
+					text = <"Item scales">
+					description = <"">
+					comment = <"e.g. 5 point Likert scale">
+				>
+				["at0010"] = <
+					text = <"Scoring">
+					description = <"">
+					comment = <"Scores by dimension, total etc.
+Also whether jurisdiction specific weights are present (e.g. EQ-5D-5L for New Zealand population).
+">
+				>
+				["at0011"] = <
+					text = <"CAT version">
+					description = <"">
+					comment = <"Availability of Computer Adaptive Testing (CAT); mostly using Item Response Theory (IRT)">
+				>
+				["at0012"] = <
+					text = <"Psychometric properties">
+					description = <"">
+					comment = <"Validity:
+Test-Retest/Reproducibility:
+Internal Consistency:
+Responsiveness:
+Minimally important difference:
+List of relevant publications:">
+				>
+				["at0013"] = <
+					text = <"Related PRMs">
+					description = <"">
+					comment = <"Related PRMs (e.g. measuring same aspects or long/short forms)">
+				>
+				["at0014"] = <
+					text = <"Translations">
+					description = <"">
+					comment = <"Available validated translations and authors and publications">
+				>
+				["at0015"] = <
+					text = <"References">
+					description = <"">
+					comment = <"List of relevant publications">
+				>
+				["at0016"] = <
+					text = <"Therapeutic areas">
+					description = <"">
+					comment = <"Condition / Population specific or generic; e.g. non-disease specific, chronic dieases, cancer, CAD, Diabetes etc.
+Use of MESH list would be valuable to standardise
+See Diseases Category: https://www.ncbi.nlm.nih.gov/mesh/1000067">
+				>
+				["at0017"] = <
+					text = <"Type">
+					description = <"">
+					comment = <"PROMs, PREMs, FROMs">
+				>
+				["at0018"] = <
+					text = <"Copyright">
+					description = <"">
+					comment = <"Copyright statement that needs to be displayed for electronic administration. May require specific formatting and display rules (e.g. all screens| first| last;  see annotations).">
+					display = <"first">
+				>
+				["at0019"] = <
+					text = <"Target cohort">
+					description = <"">
+					comment = <"paediatric, adult, male/female, age ranges etc ">
+				>
+			>
+		>
+	>
