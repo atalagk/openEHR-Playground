@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7d66638c156616de9698c6045a9dcfec">
+		["MD5-CAM-1.0.1"] = <"2ca9a81dadc2552ada113b3589472c0a">
 		["build_uid"] = <"a995dd0b-e638-3e4c-add1-b6ce26261a7e">
 	>
 
@@ -39,6 +39,7 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- Tree
 								items cardinality matches {0..*; unordered} matches {
+									CLUSTER[at0092] occurrences matches {0..1} matches {*}    -- <H1> SF-12 Health Survey</H1><br>This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. <b>Answer each question by choosing just one answer</b>. If you are unsure how to answer a question, please give the best answer you can.
 									ELEMENT[at0004] occurrences matches {0..1} matches {    -- <b>In general, would you say your health is:</b>
 										value matches {
 											1.0|[local::at0087],
@@ -499,6 +500,10 @@ Have you felt down-hearted and blue?">
 				>
 				["at0091"] = <
 					text = <"Poor">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"<H1> SF-12 Health Survey</H1><br>This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. <b>Answer each question by choosing just one answer</b>. If you are unsure how to answer a question, please give the best answer you can.">
 					description = <"">
 				>
 			>
