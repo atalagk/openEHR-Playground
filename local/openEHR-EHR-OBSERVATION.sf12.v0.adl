@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2ca9a81dadc2552ada113b3589472c0a">
+		["MD5-CAM-1.0.1"] = <"33651464237e994c1339718eaf68c5d4">
 		["build_uid"] = <"a995dd0b-e638-3e4c-add1-b6ce26261a7e">
 	>
 
@@ -39,7 +39,7 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- Tree
 								items cardinality matches {0..*; unordered} matches {
-									CLUSTER[at0092] occurrences matches {0..1} matches {*}    -- <H1> SF-12 Health Survey</H1><br>This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. <b>Answer each question by choosing just one answer</b>. If you are unsure how to answer a question, please give the best answer you can.
+									CLUSTER[at0092] matches {*}    -- <H1> SF-12 Health Survey</H1><br>This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. <b>Answer each question by choosing just one answer</b>. If you are unsure how to answer a question, please give the best answer you can.
 									ELEMENT[at0004] occurrences matches {0..1} matches {    -- <b>In general, would you say your health is:</b>
 										value matches {
 											1.0|[local::at0087],
@@ -49,16 +49,16 @@ definition
 											5.0|[local::at0091]
 										}
 									}
-									CLUSTER[at0010] occurrences matches {0..1} matches {    -- **The following questions are about activities you might do during a typical day. Does your health now limit you in these activities? If so, how much?**
+									CLUSTER[at0010] occurrences matches {0..1} matches {    -- <b>The following questions are about activities you might do during a typical day. Does your health now limit you in these activities? If so, how much?</b>
 										items cardinality matches {0..*; unordered} matches {
-											ELEMENT[at0012] occurrences matches {0..1} matches {    -- **Moderate activities** such as moving a table, pushing a vacuum cleaner, bowling, or playing golf.
+											ELEMENT[at0012] occurrences matches {0..1} matches {    -- <b>Moderate activities</b> such as moving a table, pushing a vacuum cleaner, bowling, or playing golf.
 												value matches {
 													1.0|[local::at0013],
 													2.0|[local::at0014],
 													3.0|[local::at0015]
 												}
 											}
-											ELEMENT[at0016] occurrences matches {0..1} matches {    -- Climbing **several** flights of stairs
+											ELEMENT[at0016] occurrences matches {0..1} matches {    -- Climbing <b>several</b> flights of stairs
 												value matches {
 													1.0|[local::at0017],
 													2.0|[local::at0018],
@@ -67,15 +67,15 @@ definition
 											}
 										}
 									}
-									CLUSTER[at0020] occurrences matches {0..1} matches {    -- **During the <ins>past 4 weeks</ins>, have you had any of the following problems with your work or other regular daily activities <ins>as a result of your physical health</ins>?**
+									CLUSTER[at0020] occurrences matches {0..1} matches {    -- <b>During the <u>past 4 weeks</u>, have you had any of the following problems with your work or other regular daily activities <u>as a result of your physical health</u>?</b>
 										items cardinality matches {0..*; unordered} matches {
-											ELEMENT[at0029] occurrences matches {0..1} matches {    -- **Accomplished less** than you would like.
+											ELEMENT[at0029] occurrences matches {0..1} matches {    -- <b>Accomplished less</b> than you would like.
 												value matches {
 													1.0|[local::at0030],
 													2.0|[local::at0031]
 												}
 											}
-											ELEMENT[at0021] occurrences matches {0..1} matches {    -- Limited in kind
+											ELEMENT[at0021] occurrences matches {0..1} matches {    -- Were limited in the <b>kind</b> of work or other activities.
 												value matches {
 													1.0|[local::at0022],
 													2.0|[local::at0023]
@@ -215,7 +215,7 @@ This survey asks for your views about your health. This information will help ke
 					order = <"1">
 				>
 				["at0010"] = <
-					text = <"**The following questions are about activities you might do during a typical day. Does your health now limit you in these activities? If so, how much?**">
+					text = <"<b>The following questions are about activities you might do during a typical day. Does your health now limit you in these activities? If so, how much?</b>">
 					description = <"**The following questions are about activities you might do during a typical day. Does your health now limit you in these activities? If so, how much?**">
 				>
 				["at0011"] = <
@@ -223,7 +223,7 @@ This survey asks for your views about your health. This information will help ke
 					description = <"@ internal @">
 				>
 				["at0012"] = <
-					text = <"**Moderate activities** such as moving a table, pushing a vacuum cleaner, bowling, or playing golf.">
+					text = <"<b>Moderate activities</b> such as moving a table, pushing a vacuum cleaner, bowling, or playing golf.">
 					description = <"**Moderate activities** such as moving a table, pushing a vacuum cleaner, bowling, or playing golf. ">
 					order = <"2">
 				>
@@ -240,7 +240,7 @@ This survey asks for your views about your health. This information will help ke
 					description = <"">
 				>
 				["at0016"] = <
-					text = <"Climbing **several** flights of stairs">
+					text = <"Climbing <b>several</b> flights of stairs">
 					description = <"Climbing **several** flights of stairs">
 					order = <"3">
 				>
@@ -257,12 +257,12 @@ This survey asks for your views about your health. This information will help ke
 					description = <"">
 				>
 				["at0020"] = <
-					text = <"**During the <ins>past 4 weeks</ins>, have you had any of the following problems with your work or other regular daily activities <ins>as a result of your physical health</ins>?**">
+					text = <"<b>During the <u>past 4 weeks</u>, have you had any of the following problems with your work or other regular daily activities <u>as a result of your physical health</u>?</b>">
 					description = <"**During the <ins>past 4 weeks</ins>, have you had any of the following problems with your work or other regular
 daily activities <ins>as a result of your physical health</ins>?**">
 				>
 				["at0021"] = <
-					text = <"Limited in kind">
+					text = <"Were limited in the <b>kind</b> of work or other activities.">
 					description = <"Were limited in the **kind** of work or other activities.">
 					order = <"5">
 				>
@@ -275,7 +275,7 @@ daily activities <ins>as a result of your physical health</ins>?**">
 					description = <"">
 				>
 				["at0029"] = <
-					text = <"**Accomplished less** than you would like.">
+					text = <"<b>Accomplished less</b> than you would like.">
 					description = <"**Accomplished less** than you would like.">
 					order = <"4">
 				>
@@ -504,7 +504,7 @@ Have you felt down-hearted and blue?">
 				>
 				["at0092"] = <
 					text = <"<H1> SF-12 Health Survey</H1><br>This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. <b>Answer each question by choosing just one answer</b>. If you are unsure how to answer a question, please give the best answer you can.">
-					description = <"">
+					description = <"<H1> SF-12 Health Survey</H1><br>This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. <b>Answer each question by choosing just one answer</b>. If you are unsure how to answer a question, please give the best answer you can.">
 				>
 			>
 		>
