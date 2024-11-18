@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ef8c4e5f2eca02a1347465c395089eeb">
+		["MD5-CAM-1.0.1"] = <"06015e089f00e82a8fc4e19211ad292c">
 		["build_uid"] = <"d376d74c-f960-3067-bade-2da4e5ec7819">
 	>
 
@@ -69,6 +69,11 @@ definition
 				}
 			}
 			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Administration
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0019] occurrences matches {0..1} matches {    -- Target cohort
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -136,55 +141,67 @@ ontology
 				>
 				["at0001"] = <
 					text = <"Authors">
-					description = <"Author's name and contact information">
+					description = <"">
+					comment = <"Author's name and contact information">
 				>
 				["at0002"] = <
 					text = <"Use condition">
-					description = <"Licensing and cost including translations for electronic administration">
+					description = <"">
+					comment = <"Licensing and cost including translations for electronic administration">
 				>
 				["at0003"] = <
 					text = <"Administration">
-					description = <"Self-administered or via proxy (family member, legal guardian, caregiver, interviewer)">
+					description = <"">
+					comment = <"Self-administered or via proxy (family member, legal guardian, caregiver, interviewer)">
 				>
 				["at0004"] = <
 					text = <"Description">
 					description = <"Derived from the Medical Outcomes Study 36-Item Short Form Health Survey (SF-36®) in 1996 (SF-12v1®)
 Modified in 2000 (SF-12v2® - version currently used)
 Developed to be a much shorter, yet valid, alternative to the SF-36® for use in large surveys of general and specific populations as well as large longitudinal studies of health outcomes">
+					comment = <"full description">
 				>
 				["at0005"] = <
 					text = <"Number of items">
-					description = <"Number of questions">
+					description = <"">
+					comment = <"Number of questions">
 				>
 				["at0006"] = <
 					text = <"Time to complete">
-					description = <"Time to complete in minutes">
+					description = <"">
+					comment = <"Time to complete in minutes">
 				>
 				["at0007"] = <
 					text = <"Domains & Categories">
 					description = <"">
+					comment = <"Multiple domains could be listed (e.g. emotional status, mobility, dependence etc.); possibly can use standard list but this is not used consistently">
 				>
 				["at0008"] = <
 					text = <"Electronic version">
-					description = <"Existing electronic migration guides (eBooklets)">
+					description = <"">
+					comment = <"Existing electronic migration guides (eBooklets)">
 				>
 				["at0009"] = <
 					text = <"Item scales">
-					description = <"e.g. 5 point Likert scale">
+					description = <"">
+					comment = <"e.g. 5 point Likert scale">
 				>
 				["at0010"] = <
 					text = <"Scoring">
-					description = <"Scores by dimension, total etc.
+					description = <"">
+					comment = <"Scores by dimension, total etc.
 Also whether jurisdiction specific weights are present (e.g. EQ-5D-5L for New Zealand population).
 ">
 				>
 				["at0011"] = <
 					text = <"CAT version">
-					description = <"Availability of Computer Adaptive Testing (CAT); mostly using Item Response Theory (IRT)">
+					description = <"">
+					comment = <"Availability of Computer Adaptive Testing (CAT); mostly using Item Response Theory (IRT)">
 				>
 				["at0012"] = <
 					text = <"Psychometric properties">
-					description = <"Validity:
+					description = <"">
+					comment = <"Validity:
 Test-Retest/Reproducibility:
 Internal Consistency:
 Responsiveness:
@@ -193,31 +210,41 @@ List of relevant publications:">
 				>
 				["at0013"] = <
 					text = <"Related PRMs">
-					description = <"Related PRMs (e.g. measuring same aspects or long/short forms)">
+					description = <"">
+					comment = <"Related PRMs (e.g. measuring same aspects or long/short forms)">
 				>
 				["at0014"] = <
 					text = <"Translations">
-					description = <"Available validated translations and authors and publications">
+					description = <"">
+					comment = <"Available validated translations and authors and publications">
 				>
 				["at0015"] = <
 					text = <"References">
-					description = <"List of relevant publications">
+					description = <"">
+					comment = <"List of relevant publications">
 				>
 				["at0016"] = <
 					text = <"Therapeutic areas">
-					description = <"Condition / Population specific or generic; e.g. non-disease specific, chronic dieases, cancer, CAD, Diabetes etc.
+					description = <"">
+					comment = <"Condition / Population specific or generic; e.g. non-disease specific, chronic dieases, cancer, CAD, Diabetes etc.
 Use of MESH list would be valuable to standardise
-See Diseases Category: https://www.ncbi.nlm.nih.gov/mesh/1000067
-">
+See Diseases Category: https://www.ncbi.nlm.nih.gov/mesh/1000067">
 				>
 				["at0017"] = <
 					text = <"Type">
-					description = <"PROMs, PREMs, FROMs">
+					description = <"">
+					comment = <"PROMs, PREMs, FROMs">
 				>
 				["at0018"] = <
 					text = <"Copyright">
-					description = <"© The Medical Outcomes Trust (MOT), Health Assessment Lab (HAL) and QualityMetric Incorporated.">
-					comment = <"Copyright statement that needs to be displayed for electronic administration. May require specific formatting and display rules (e.g. all screens| beginning | end;  last see annotations).">
+					description = <"">
+					comment = <"Copyright statement that needs to be displayed for electronic administration. May require specific formatting and display rules (e.g. all screens| first| last;  see annotations).">
+					display = <"first">
+				>
+				["at0019"] = <
+					text = <"Target cohort">
+					description = <"">
+					comment = <"paediatric, adult, male/female, age ranges etc ">
 				>
 			>
 		>
