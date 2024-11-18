@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"33651464237e994c1339718eaf68c5d4">
+		["MD5-CAM-1.0.1"] = <"1ed841920120263b863c9e650704d9c9">
 		["build_uid"] = <"a995dd0b-e638-3e4c-add1-b6ce26261a7e">
 	>
 
@@ -39,14 +39,17 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- Tree
 								items cardinality matches {0..*; unordered} matches {
-									CLUSTER[at0092] matches {*}    -- <H1> SF-12 Health Survey</H1><br>This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. <b>Answer each question by choosing just one answer</b>. If you are unsure how to answer a question, please give the best answer you can.
-									ELEMENT[at0004] occurrences matches {0..1} matches {    -- <b>In general, would you say your health is:</b>
-										value matches {
-											1.0|[local::at0087],
-											2.0|[local::at0088],
-											3.0|[local::at0089],
-											4.0|[local::at0090],
-											5.0|[local::at0091]
+									CLUSTER[at0092] occurrences matches {0..1} matches {    -- <H3> SF-12 Health Survey</H3><br>This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. <b>Answer each question by choosing just one answer</b>. If you are unsure how to answer a question, please give the best answer you can.
+										items cardinality matches {0..*; unordered} matches {
+											ELEMENT[at0004] occurrences matches {0..1} matches {    -- <b>In general, would you say your health is:</b>
+												value matches {
+													1.0|[local::at0087],
+													2.0|[local::at0088],
+													3.0|[local::at0089],
+													4.0|[local::at0090],
+													5.0|[local::at0091]
+												}
+											}
 										}
 									}
 									CLUSTER[at0010] occurrences matches {0..1} matches {    -- <b>The following questions are about activities you might do during a typical day. Does your health now limit you in these activities? If so, how much?</b>
@@ -503,8 +506,8 @@ Have you felt down-hearted and blue?">
 					description = <"">
 				>
 				["at0092"] = <
-					text = <"<H1> SF-12 Health Survey</H1><br>This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. <b>Answer each question by choosing just one answer</b>. If you are unsure how to answer a question, please give the best answer you can.">
-					description = <"<H1> SF-12 Health Survey</H1><br>This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. <b>Answer each question by choosing just one answer</b>. If you are unsure how to answer a question, please give the best answer you can.">
+					text = <"<H3> SF-12 Health Survey</H3><br>This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. <b>Answer each question by choosing just one answer</b>. If you are unsure how to answer a question, please give the best answer you can.">
+					description = <"<H3> SF-12 Health Survey</H3><br>This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. <b>Answer each question by choosing just one answer</b>. If you are unsure how to answer a question, please give the best answer you can.">
 				>
 			>
 		>
