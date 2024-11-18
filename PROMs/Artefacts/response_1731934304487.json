@@ -6,7 +6,7 @@
   },
   "uid": {
     "_type": "OBJECT_VERSION_ID",
-    "value": "5aa64b49-bf1c-46b9-a51b-67a251b134c0::koray_galata_digital_biz::1"
+    "value": "0546283e-2f71-40d1-8b27-fb6377db4755::koray_galata_digital_biz::1"
   },
   "archetype_details": {
     "_type": "ARCHETYPED",
@@ -16,7 +16,7 @@
     },
     "template_id": {
       "_type": "TEMPLATE_ID",
-      "value": "generic_prms"
+      "value": "sf_12"
     },
     "rm_version": "1.1.0"
   },
@@ -69,7 +69,7 @@
     "_type": "EVENT_CONTEXT",
     "start_time": {
       "_type": "DV_DATE_TIME",
-      "value": "2024-11-18T04:44:18.111757121+01:00"
+      "value": "2024-11-18T13:36:44.310684606+01:00"
     },
     "setting": {
       "_type": "DV_CODED_TEXT",
@@ -93,7 +93,7 @@
       },
       "uid": {
         "_type": "OBJECT_VERSION_ID",
-        "value": "71c9b2c0-8e4b-466b-9912-222388de5bb0"
+        "value": "30062d3e-e862-4579-95e4-117114d67412"
       },
       "archetype_details": {
         "_type": "ARCHETYPED",
@@ -156,7 +156,7 @@
                 "archetype_node_id": "at0004",
                 "value": {
                   "_type": "DV_TEXT",
-                  "value": "This is SF12"
+                  "value": "SF-12"
                 }
               },
               {
@@ -187,6 +187,18 @@
                 "_type": "ELEMENT",
                 "name": {
                   "_type": "DV_TEXT",
+                  "value": "Copyright"
+                },
+                "archetype_node_id": "at0018",
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "C - This is copyright statement"
+                }
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
                   "value": "Use condition"
                 },
                 "archetype_node_id": "at0002",
@@ -204,7 +216,7 @@
                 "archetype_node_id": "at0014",
                 "value": {
                   "_type": "DV_TEXT",
-                  "value": "en;pt"
+                  "value": "pt;tr"
                 }
               },
               {
@@ -216,7 +228,7 @@
                 "archetype_node_id": "at0008",
                 "value": {
                   "_type": "DV_TEXT",
-                  "value": "yes"
+                  "value": "Yes"
                 }
               },
               {
@@ -228,7 +240,19 @@
                 "archetype_node_id": "at0003",
                 "value": {
                   "_type": "DV_TEXT",
-                  "value": "all genders"
+                  "value": "Patient"
+                }
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Target cohort"
+                },
+                "archetype_node_id": "at0019",
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Adult"
                 }
               },
               {
@@ -264,7 +288,7 @@
                 "archetype_node_id": "at0016",
                 "value": {
                   "_type": "DV_TEXT",
-                  "value": "generic"
+                  "value": "Not disease specific"
                 }
               },
               {
@@ -276,7 +300,7 @@
                 "archetype_node_id": "at0007",
                 "value": {
                   "_type": "DV_TEXT",
-                  "value": "8"
+                  "value": "8 domains: mobility, emotion etc."
                 }
               },
               {
@@ -288,7 +312,7 @@
                 "archetype_node_id": "at0009",
                 "value": {
                   "_type": "DV_TEXT",
-                  "value": "likert 3 and 5"
+                  "value": "5 point Likert"
                 }
               },
               {
@@ -300,7 +324,7 @@
                 "archetype_node_id": "at0010",
                 "value": {
                   "_type": "DV_TEXT",
-                  "value": "sum"
+                  "value": "Sum all values"
                 }
               },
               {
@@ -312,7 +336,7 @@
                 "archetype_node_id": "at0011",
                 "value": {
                   "_type": "DV_TEXT",
-                  "value": "no"
+                  "value": "No"
                 }
               },
               {
@@ -324,7 +348,7 @@
                 "archetype_node_id": "at0012",
                 "value": {
                   "_type": "DV_TEXT",
-                  "value": "good!"
+                  "value": "Good validity"
                 }
               },
               {
@@ -336,7 +360,7 @@
                 "archetype_node_id": "at0015",
                 "value": {
                   "_type": "DV_TEXT",
-                  "value": "atalag k, dasdsdasd"
+                  "value": "Blah"
                 }
               },
               {
@@ -348,7 +372,7 @@
                 "archetype_node_id": "at0013",
                 "value": {
                   "_type": "DV_TEXT",
-                  "value": "SF36"
+                  "value": "SF-36"
                 }
               }
             ]
@@ -364,7 +388,7 @@
         "archetype_node_id": "at0001",
         "origin": {
           "_type": "DV_DATE_TIME",
-          "value": "2024-11-18T04:44:18.111757121+01:00"
+          "value": "2024-11-18T13:36:44.310684606+01:00"
         },
         "events": [
           {
@@ -376,7 +400,7 @@
             "archetype_node_id": "at0002",
             "time": {
               "_type": "DV_DATE_TIME",
-              "value": "2024-11-18T04:44:18.111757121+01:00"
+              "value": "2024-11-18T13:36:44.310684606+01:00"
             },
             "data": {
               "_type": "ITEM_TREE",
@@ -387,22 +411,32 @@
               "archetype_node_id": "at0003",
               "items": [
                 {
-                  "_type": "ELEMENT",
+                  "_type": "CLUSTER",
                   "name": {
                     "_type": "DV_TEXT",
-                    "value": "General health"
+                    "value": "<H3> SF-12 Health Survey</H3><br>This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. <b>Answer each question by choosing just one answer</b>. If you are unsure how to answer a question, please give the best answer you can."
                   },
-                  "archetype_node_id": "at0004",
-                  "value": {
-                    "_type": "DV_SCALE",
-                    "value": 1
-                  }
+                  "archetype_node_id": "at0092",
+                  "items": [
+                    {
+                      "_type": "ELEMENT",
+                      "name": {
+                        "_type": "DV_TEXT",
+                        "value": "<b>In general, would you say your health is:</b>"
+                      },
+                      "archetype_node_id": "at0004",
+                      "value": {
+                        "_type": "DV_SCALE",
+                        "value": 1
+                      }
+                    }
+                  ]
                 },
                 {
                   "_type": "CLUSTER",
                   "name": {
                     "_type": "DV_TEXT",
-                    "value": "Daily activities"
+                    "value": "<b>The following questions are about activities you might do during a typical day. Does your health now limit you in these activities? If so, how much?</b>"
                   },
                   "archetype_node_id": "at0010",
                   "items": [
@@ -410,7 +444,7 @@
                       "_type": "ELEMENT",
                       "name": {
                         "_type": "DV_TEXT",
-                        "value": "Moderate activities"
+                        "value": "<b>Moderate activities</b> such as moving a table, pushing a vacuum cleaner, bowling, or playing golf."
                       },
                       "archetype_node_id": "at0012",
                       "value": {
@@ -422,12 +456,12 @@
                       "_type": "ELEMENT",
                       "name": {
                         "_type": "DV_TEXT",
-                        "value": "Climbing stairs"
+                        "value": "Climbing <b>several</b> flights of stairs"
                       },
                       "archetype_node_id": "at0016",
                       "value": {
                         "_type": "DV_SCALE",
-                        "value": 2
+                        "value": 3
                       }
                     }
                   ]
@@ -436,7 +470,7 @@
                   "_type": "CLUSTER",
                   "name": {
                     "_type": "DV_TEXT",
-                    "value": "Physical health"
+                    "value": "<b>During the <u>past 4 weeks</u>, have you had any of the following problems with your work or other regular daily activities <u>as a result of your physical health</u>?</b>"
                   },
                   "archetype_node_id": "at0020",
                   "items": [
@@ -444,9 +478,43 @@
                       "_type": "ELEMENT",
                       "name": {
                         "_type": "DV_TEXT",
-                        "value": "Accomplished less"
+                        "value": "<b>Accomplished less</b> than you would like."
                       },
                       "archetype_node_id": "at0029",
+                      "value": {
+                        "_type": "DV_SCALE",
+                        "value": 2
+                      }
+                    },
+                    {
+                      "_type": "ELEMENT",
+                      "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Were limited in the <b>kind</b> of work or other activities."
+                      },
+                      "archetype_node_id": "at0021",
+                      "value": {
+                        "_type": "DV_SCALE",
+                        "value": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "_type": "CLUSTER",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "<b>During the <u>past 4 weeks</u>, have you had any of the following problems with your work or other regular daily activities <u>as a result of any emotional problems</u> (such as feeling depressed or anxious)?</b>"
+                  },
+                  "archetype_node_id": "at0032",
+                  "items": [
+                    {
+                      "_type": "ELEMENT",
+                      "name": {
+                        "_type": "DV_TEXT",
+                        "value": "<b>Accomplished less</b> than you would like."
+                      },
+                      "archetype_node_id": "at0033",
                       "value": {
                         "_type": "DV_SCALE",
                         "value": 1
@@ -456,9 +524,9 @@
                       "_type": "ELEMENT",
                       "name": {
                         "_type": "DV_TEXT",
-                        "value": "Limited in kind"
+                        "value": "Did work or activities <b>less carefully than usual.</b>"
                       },
-                      "archetype_node_id": "at0021",
+                      "archetype_node_id": "at0036",
                       "value": {
                         "_type": "DV_SCALE",
                         "value": 2
@@ -467,10 +535,22 @@
                   ]
                 },
                 {
+                  "_type": "ELEMENT",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "<b>During the <u>past 4 weeks</u>, how much <u>did pain interfere</u> with your normal work (including work outside the home and housework)?</b>"
+                  },
+                  "archetype_node_id": "at0046",
+                  "value": {
+                    "_type": "DV_SCALE",
+                    "value": 3
+                  }
+                },
+                {
                   "_type": "CLUSTER",
                   "name": {
                     "_type": "DV_TEXT",
-                    "value": "Feeling"
+                    "value": "<b>These questions are about how you have been feeling during the past 4 weeks.<br>For each question, please give the one answer that comes closest to the way you have been feeling.</b>"
                   },
                   "archetype_node_id": "at0039",
                   "items": [
@@ -478,19 +558,19 @@
                       "_type": "ELEMENT",
                       "name": {
                         "_type": "DV_TEXT",
-                        "value": "Calm & peaceful"
+                        "value": "<b>How much of the time during the <u>past 4 weeks</u>…</b> Have you felt calm & peaceful?"
                       },
                       "archetype_node_id": "at0040",
                       "value": {
                         "_type": "DV_SCALE",
-                        "value": 2
+                        "value": 1
                       }
                     },
                     {
                       "_type": "ELEMENT",
                       "name": {
                         "_type": "DV_TEXT",
-                        "value": "A lot of energy"
+                        "value": "<b>How much of the time during the <u>past 4 weeks</u>…</b> Did you have a lot of energy?"
                       },
                       "archetype_node_id": "at0056",
                       "value": {
@@ -502,12 +582,12 @@
                       "_type": "ELEMENT",
                       "name": {
                         "_type": "DV_TEXT",
-                        "value": "Down hearted & blue"
+                        "value": "<b>How much of the time during the <u>past 4 weeks</u>…</b> Have you felt down-hearted and blue?"
                       },
                       "archetype_node_id": "at0063",
                       "value": {
                         "_type": "DV_SCALE",
-                        "value": 3
+                        "value": 6
                       }
                     }
                   ]
@@ -516,13 +596,36 @@
                   "_type": "ELEMENT",
                   "name": {
                     "_type": "DV_TEXT",
-                    "value": "Social activities"
+                    "value": "<b>During the <u>past 4 weeks</u>, how much of the time has your <u>physical health or emotional problems</u> interfered with your social activities (like visiting friends, relatives, etc.)?</b>"
                   },
                   "archetype_node_id": "at0076",
                   "value": {
                     "_type": "DV_SCALE",
-                    "value": 3
+                    "value": 1
                   }
+                },
+                {
+                  "_type": "CLUSTER",
+                  "name": {
+                    "_type": "DV_TEXT",
+                    "value": "Scoring"
+                  },
+                  "archetype_node_id": "at0084",
+                  "items": [
+                    {
+                      "_type": "ELEMENT",
+                      "name": {
+                        "_type": "DV_TEXT",
+                        "value": "Score"
+                      },
+                      "archetype_node_id": "at0085",
+                      "value": {
+                        "_type": "DV_QUANTITY",
+                        "magnitude": 24,
+                        "units": "1"
+                      }
+                    }
+                  ]
                 }
               ]
             }
