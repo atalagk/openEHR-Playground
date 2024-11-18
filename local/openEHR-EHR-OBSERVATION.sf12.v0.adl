@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ea2a7aa2fef1e81a5f6c8a1c2654fc9f">
+		["MD5-CAM-1.0.1"] = <"343484b974190e136c597c07d9e6e939">
 		["build_uid"] = <"a995dd0b-e638-3e4c-add1-b6ce26261a7e">
 	>
 
@@ -48,7 +48,7 @@ definition
 											5.0|[local::at0091]
 										}
 									}
-									CLUSTER[at0010] matches {    -- Daily activities
+									CLUSTER[at0010] occurrences matches {0..1} matches {    -- Daily activities
 										items cardinality matches {0..*; unordered} matches {
 											ELEMENT[at0012] occurrences matches {0..1} matches {    -- Moderate activities
 												value matches {
