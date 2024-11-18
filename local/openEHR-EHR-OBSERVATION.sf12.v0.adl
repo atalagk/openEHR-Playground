@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1ed841920120263b863c9e650704d9c9">
+		["MD5-CAM-1.0.1"] = <"387f6fbd2113992d948942dd9db2a09d">
 		["build_uid"] = <"a995dd0b-e638-3e4c-add1-b6ce26261a7e">
 	>
 
@@ -86,15 +86,15 @@ definition
 											}
 										}
 									}
-									CLUSTER[at0032] occurrences matches {0..1} matches {    -- Emotional problems
+									CLUSTER[at0032] occurrences matches {0..1} matches {    -- <b>During the <u>past 4 weeks</u>, have you had any of the following problems with your work or other regular daily activities <u>as a result of any emotional problems</u> (such as feeling depressed or anxious)?</b>
 										items cardinality matches {0..*; unordered} matches {
-											ELEMENT[at0033] occurrences matches {0..1} matches {    -- Accomplished less
+											ELEMENT[at0033] occurrences matches {0..1} matches {    -- <b>Accomplished less</b> than you would like.
 												value matches {
 													1.0|[local::at0034],
 													2.0|[local::at0035]
 												}
 											}
-											ELEMENT[at0036] occurrences matches {0..1} matches {    -- Less careful
+											ELEMENT[at0036] occurrences matches {0..1} matches {    -- Did work or activities <b>less carefully than usual.</b>
 												value matches {
 													1.0|[local::at0037],
 													2.0|[local::at0038]
@@ -102,7 +102,7 @@ definition
 											}
 										}
 									}
-									ELEMENT[at0046] occurrences matches {0..1} matches {    -- Pain interference
+									ELEMENT[at0046] occurrences matches {0..1} matches {    -- <b>During the <u>past 4 weeks</u>, how much <u>did pain interfere</u> with your normal work (including work outside the home and housework)?</b>
 										value matches {
 											1.0|[local::at0047],
 											2.0|[local::at0048],
@@ -111,9 +111,9 @@ definition
 											5.0|[local::at0051]
 										}
 									}
-									CLUSTER[at0039] occurrences matches {0..1} matches {    -- Feeling
+									CLUSTER[at0039] occurrences matches {0..1} matches {    -- <b>These questions are about how you have been feeling during the past 4 weeks.<br>For each question, please give the one answer that comes closest to the way you have been feeling.</b>
 										items cardinality matches {0..*; unordered} matches {
-											ELEMENT[at0040] occurrences matches {0..1} matches {    -- Calm & peaceful
+											ELEMENT[at0040] occurrences matches {0..1} matches {    -- <b>How much of the time during the <u>past 4 weeks</u>…</b> Have you felt calm & peaceful?
 												value matches {
 													1.0|[local::at0041],
 													2.0|[local::at0042],
@@ -123,7 +123,7 @@ definition
 													6.0|[local::at0055]
 												}
 											}
-											ELEMENT[at0056] occurrences matches {0..1} matches {    -- A lot of energy
+											ELEMENT[at0056] occurrences matches {0..1} matches {    -- <b>How much of the time during the <u>past 4 weeks</u>…</b> Did you have a lot of energy?
 												value matches {
 													1.0|[local::at0057],
 													2.0|[local::at0058],
@@ -133,7 +133,7 @@ definition
 													6.0|[local::at0062]
 												}
 											}
-											ELEMENT[at0063] occurrences matches {0..1} matches {    -- Down hearted & blue
+											ELEMENT[at0063] occurrences matches {0..1} matches {    -- <b>How much of the time during the <u>past 4 weeks</u>…</b> Have you felt down-hearted and blue?
 												value matches {
 													1.0|[local::at0064],
 													2.0|[local::at0065],
@@ -145,7 +145,7 @@ definition
 											}
 										}
 									}
-									ELEMENT[at0076] occurrences matches {0..1} matches {    -- Social activities
+									ELEMENT[at0076] occurrences matches {0..1} matches {    -- <b>During the <u>past 4 weeks</u>, how much of the time has your <u>physical health or emotional problems</u> interfered with your social activities (like visiting friends, relatives, etc.)?</b>
 										value matches {
 											1.0|[local::at0077],
 											2.0|[local::at0078],
@@ -291,12 +291,12 @@ daily activities <ins>as a result of your physical health</ins>?**">
 					description = <"">
 				>
 				["at0032"] = <
-					text = <"Emotional problems">
+					text = <"<b>During the <u>past 4 weeks</u>, have you had any of the following problems with your work or other regular daily activities <u>as a result of any emotional problems</u> (such as feeling depressed or anxious)?</b>">
 					description = <"**During the <ins>past 4 weeks</ins>, have you had any of the following problems with your work or other regular
 daily activities <ins>as a result of any emotional problems</ins> (such as feeling depressed or anxious)?**">
 				>
 				["at0033"] = <
-					text = <"Accomplished less">
+					text = <"<b>Accomplished less</b> than you would like.">
 					description = <"**Accomplished less** than you would like.">
 					order = <"6">
 				>
@@ -309,7 +309,7 @@ daily activities <ins>as a result of any emotional problems</ins> (such as feeli
 					description = <"">
 				>
 				["at0036"] = <
-					text = <"Less careful">
+					text = <"Did work or activities <b>less carefully than usual.</b>">
 					description = <"Did work or activities **less carefully than usual**.">
 					order = <"7">
 				>
@@ -322,13 +322,13 @@ daily activities <ins>as a result of any emotional problems</ins> (such as feeli
 					description = <"">
 				>
 				["at0039"] = <
-					text = <"Feeling">
+					text = <"<b>These questions are about how you have been feeling during the past 4 weeks.<br>For each question, please give the one answer that comes closest to the way you have been feeling.</b>">
 					description = <"**These questions are about how you have been feeling during the past 4 weeks.**
 **For each question, please give the one answer that comes closest to the way you have been feeling.**">
 					comment = <"Display on screen once for this group of questions before the questions.">
 				>
 				["at0040"] = <
-					text = <"Calm & peaceful">
+					text = <"<b>How much of the time during the <u>past 4 weeks</u>…</b> Have you felt calm & peaceful?">
 					description = <"**How much of the time during the <ins>past 4 weeks</ins>…**
 Have you felt calm & peaceful?">
 					order = <"9">
@@ -342,7 +342,7 @@ Have you felt calm & peaceful?">
 					description = <"">
 				>
 				["at0046"] = <
-					text = <"Pain interference">
+					text = <"<b>During the <u>past 4 weeks</u>, how much <u>did pain interfere</u> with your normal work (including work outside the home and housework)?</b>">
 					description = <"**During the <ins>past 4 weeks</ins>, how much <ins>did pain interfere</ins> with your normal work (including work outside the home and housework)?**">
 					order = <"8">
 				>
@@ -383,7 +383,7 @@ Have you felt calm & peaceful?">
 					description = <"">
 				>
 				["at0056"] = <
-					text = <"A lot of energy">
+					text = <"<b>How much of the time during the <u>past 4 weeks</u>…</b> Did you have a lot of energy?">
 					description = <"**How much of the time during the <ins>past 4 weeks</ins>…**
 Did you have a lot of energy? ">
 					order = <"10">
@@ -413,7 +413,7 @@ Did you have a lot of energy? ">
 					description = <"">
 				>
 				["at0063"] = <
-					text = <"Down hearted & blue">
+					text = <"<b>How much of the time during the <u>past 4 weeks</u>…</b> Have you felt down-hearted and blue?">
 					description = <"**How much of the time during the <ins>past 4 weeks</ins>…**
 Have you felt down-hearted and blue?">
 					order = <"11">
@@ -443,7 +443,7 @@ Have you felt down-hearted and blue?">
 					description = <"">
 				>
 				["at0076"] = <
-					text = <"Social activities">
+					text = <"<b>During the <u>past 4 weeks</u>, how much of the time has your <u>physical health or emotional problems</u> interfered with your social activities (like visiting friends, relatives, etc.)?</b>">
 					description = <"**During the <ins>past 4 weeks</ins>, how much of the time has your <ins>physical health or emotional problems</ins> interfered with your social activities (like visiting friends, relatives, etc.)?**">
 					order = <"12">
 				>
