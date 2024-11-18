@@ -27,7 +27,7 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["build_uid"] = <"a995dd0b-e638-3e4c-add1-b6ce26261a7e">
-		["MD5-CAM-1.0.1"] = <"dd267ec79eadccd172505a346b8ac03f">
+		["MD5-CAM-1.0.1"] = <"b379fddefc66addf5db1f4d9b9d5da62">
 	>
 
 definition
@@ -159,7 +159,14 @@ definition
 			}
 		}
 		protocol matches {
-			ITEM_TREE[at0011] matches {*}    -- Item tree
+			ITEM_TREE[at0011] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0083] occurrences matches {0..1} matches {    -- PRM Properties
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
 		}
 	}
 
@@ -467,6 +474,10 @@ Have you felt down-hearted and blue?">
 				["at0082"] = <
 					text = <"None">
 					description = <"None of the time">
+				>
+				["at0083"] = <
+					text = <"PRM Properties">
+					description = <"An exhaustive list of properties that apply to the PRM">
 				>
 			>
 		>
