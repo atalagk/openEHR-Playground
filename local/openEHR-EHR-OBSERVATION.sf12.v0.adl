@@ -27,7 +27,7 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["build_uid"] = <"a995dd0b-e638-3e4c-add1-b6ce26261a7e">
-		["MD5-CAM-1.0.1"] = <"b379fddefc66addf5db1f4d9b9d5da62">
+		["MD5-CAM-1.0.1"] = <"ce4751ff81196ea94316a540ca4dd662">
 	>
 
 definition
@@ -163,7 +163,7 @@ definition
 				items cardinality matches {0..*; unordered} matches {
 					allow_archetype CLUSTER[at0083] occurrences matches {0..1} matches {    -- PRM Properties
 						include
-							archetype_id/value matches {/.*/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.prm_properties\.v0/}
 					}
 				}
 			}
