@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a6a86c3570a3b37be14afaae90696d12">
+		["MD5-CAM-1.0.1"] = <"20c2a0bb4c7ccc0c1b249335492b468e">
 		["build_uid"] = <"a995dd0b-e638-3e4c-add1-b6ce26261a7e">
 	>
 
@@ -231,15 +231,15 @@ This survey asks for your views about your health. This information will help ke
 					order = <"2">
 				>
 				["at0013"] = <
-					text = <"<b>Yes, limited a lot</b>">
+					text = <"Yes, limited a lot">
 					description = <"">
 				>
 				["at0014"] = <
-					text = <"<b>Yes, limited a little</b>">
+					text = <"Yes, limited a little">
 					description = <"">
 				>
 				["at0015"] = <
-					text = <"<b>No, not limited at all</b>">
+					text = <"No, not limited at all">
 					description = <"">
 				>
 				["at0016"] = <
@@ -248,15 +248,15 @@ This survey asks for your views about your health. This information will help ke
 					order = <"3">
 				>
 				["at0017"] = <
-					text = <"**Yes, limited a lot**">
+					text = <"Yes, limited a lot">
 					description = <"">
 				>
 				["at0018"] = <
-					text = <"**Yes, limited a little**">
+					text = <"Yes, limited a little">
 					description = <"">
 				>
 				["at0019"] = <
-					text = <"**No, not limited at all**">
+					text = <"No, not limited at all">
 					description = <"">
 				>
 				["at0020"] = <
@@ -270,11 +270,11 @@ daily activities <ins>as a result of your physical health</ins>?**">
 					order = <"5">
 				>
 				["at0022"] = <
-					text = <"**YES**">
+					text = <"YES">
 					description = <"">
 				>
 				["at0023"] = <
-					text = <"**NO**">
+					text = <"NO">
 					description = <"">
 				>
 				["at0029"] = <
@@ -283,11 +283,11 @@ daily activities <ins>as a result of your physical health</ins>?**">
 					order = <"4">
 				>
 				["at0030"] = <
-					text = <"**YES**">
+					text = <"YES">
 					description = <"">
 				>
 				["at0031"] = <
-					text = <"**NO**">
+					text = <"NO">
 					description = <"">
 				>
 				["at0032"] = <
@@ -301,11 +301,11 @@ daily activities <ins>as a result of any emotional problems</ins> (such as feeli
 					order = <"6">
 				>
 				["at0034"] = <
-					text = <"**YES**">
+					text = <"YES">
 					description = <"">
 				>
 				["at0035"] = <
-					text = <"**NO**">
+					text = <"NO">
 					description = <"">
 				>
 				["at0036"] = <
@@ -314,11 +314,11 @@ daily activities <ins>as a result of any emotional problems</ins> (such as feeli
 					order = <"7">
 				>
 				["at0037"] = <
-					text = <"**YES**">
+					text = <"YES">
 					description = <"">
 				>
 				["at0038"] = <
-					text = <"**NO**">
+					text = <"NO">
 					description = <"">
 				>
 				["at0039"] = <
