@@ -56,6 +56,10 @@
                 <value>93D7156AD670461B54017CE2CB55ECAF</value>
             </item>
             <item>
+                <key>MD5-CAM-1.0.1</key>
+                <value>4e1f741d1c69443c2551b3099977b06d</value>
+            </item>
+            <item>
                 <key>original_language</key>
                 <value>ISO_639-1::en</value>
             </item>
@@ -166,7 +170,7 @@
         <digest id="MD5-CAM-1.0.1">93D7156AD670461B54017CE2CB55ECAF</digest>
     </integrity_checks>
     <integrity_checks archetype_id="openEHR-EHR-OBSERVATION.sf12.v0" xmlns:tem="openEHR/v1/Template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:ArchetypeIntegrity">
-        <digest id="MD5-CAM-1.0.1">c574edde55b0b3aed3031ddb7b715713</digest>
+        <digest id="MD5-CAM-1.0.1">ea2a7aa2fef1e81a5f6c8a1c2654fc9f</digest>
     </integrity_checks>
     <integrity_checks archetype_id="openEHR-EHR-CLUSTER.prm_properties.v0" xmlns:tem="openEHR/v1/Template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:ArchetypeIntegrity">
         <digest id="MD5-CAM-1.0.1">06015e089f00e82a8fc4e19211ad292c</digest>
