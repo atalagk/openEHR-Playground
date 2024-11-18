@@ -25,7 +25,7 @@
       "sem_ver" : "0.2.1",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "93D7156AD670461B54017CE2CB55ECAF",
-      "MD5-CAM-1.0.1" : "a6a98b5b2fa948f2de8584118ffe96f1"
+      "MD5-CAM-1.0.1" : "4e1f741d1c69443c2551b3099977b06d"
     },
     "details" : {
       "nn" : {
@@ -232,9 +232,22 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "96c4703848edfdbf22b797cc9af22aca"
+        "PARENT:MD5-CAM-1.0.1" : "c574edde55b0b3aed3031ddb7b715713"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "annotations" : {
       "@type" : "RESOURCE_ANNOTATIONS",
@@ -349,9 +362,22 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "ef8c4e5f2eca02a1347465c395089eeb"
+        "PARENT:MD5-CAM-1.0.1" : "06015e089f00e82a8fc4e19211ad292c"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.prm_properties.v0",
     "differential" : true,
