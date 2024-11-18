@@ -1,1 +1,470 @@
-{"@type":"TEMPLATE","uid":"c9bcb0e6-a2f1-404a-92a8-522256277f36","description":{"@type":"RESOURCE_DESCRIPTION","originalAuthor":{"name":"Koray Atalag","organisation":"Galata-Digital","email":"koray.atalag@gmail.com","date":"2024-11-18"},"otherContributors":[],"lifecycleState":{"codeString":"unmanaged"},"ipAcknowledgements":{},"references":{},"conversionDetails":{},"otherDetails":{"licence":"","custodian_organisation":"","original_namespace":"","original_publisher":"","custodian_namespace":"","sem_ver":"0.2.1","build_uid":"","PARENT:MD5-CAM-1.0.1":"93D7156AD670461B54017CE2CB55ECAF","MD5-CAM-1.0.1":"4e1f741d1c69443c2551b3099977b06d"},"details":{"nn":{"@type":"RESOURCE_DESCRIPTION_ITEM","language":{"terminologyId":{"value":"ISO_639-1"},"codeString":"nn"},"keywords":[],"originalResourceUri":{},"otherDetails":{}},"de":{"@type":"RESOURCE_DESCRIPTION_ITEM","language":{"terminologyId":{"value":"ISO_639-1"},"codeString":"de"},"keywords":[],"originalResourceUri":{},"otherDetails":{}},"sv":{"@type":"RESOURCE_DESCRIPTION_ITEM","language":{"terminologyId":{"value":"ISO_639-1"},"codeString":"sv"},"keywords":[],"originalResourceUri":{},"otherDetails":{}},"pt":{"@type":"RESOURCE_DESCRIPTION_ITEM","language":{"terminologyId":{"value":"ISO_639-1"},"codeString":"pt"},"keywords":[],"originalResourceUri":{},"otherDetails":{}},"nb":{"@type":"RESOURCE_DESCRIPTION_ITEM","language":{"terminologyId":{"value":"ISO_639-1"},"codeString":"nb"},"keywords":[],"originalResourceUri":{},"otherDetails":{}},"en":{"@type":"RESOURCE_DESCRIPTION_ITEM","language":{"terminologyId":{"value":"ISO_639-1"},"codeString":"en"},"keywords":[],"originalResourceUri":{},"otherDetails":{}},"fr":{"@type":"RESOURCE_DESCRIPTION_ITEM","language":{"terminologyId":{"value":"ISO_639-1"},"codeString":"fr"},"keywords":[],"originalResourceUri":{},"otherDetails":{}}}},"parentArchetypeId":"openEHR-EHR-COMPOSITION.self_reported_data.v1","differential":true,"archetypeId":{"@type":"ARCHETYPE_HRID","value":"openEHR-EHR-COMPOSITION.t_self_reported_data.v1"},"definition":{"@type":"C_COMPLEX_OBJECT","rmTypeName":"COMPOSITION","nodeId":"at0000.1","attributes":[{"@type":"C_ATTRIBUTE","rmAttributeName":"context","children":[{"@type":"C_COMPLEX_OBJECT","rmTypeName":"EVENT_CONTEXT","attributes":[],"attributeTuples":[]}]},{"@type":"C_ATTRIBUTE","rmAttributeName":"content","existence":"0..1","cardinality":{"@type":"CARDINALITY","interval":"1..*","ordered":false,"unique":false},"children":[{"@type":"C_ARCHETYPE_ROOT","rmTypeName":"OBSERVATION","occurrences":"0..1","nodeId":"at0.2","attributes":[],"attributeTuples":[],"archetypeRef":"openEHR-EHR-OBSERVATION.ovl-sf12-001.v0","referenceType":"archetypeOverlay"}]}],"attributeTuples":[]},"terminology":{"@type":"ARCHETYPE_TERMINOLOGY","conceptCode":"at0000","termDefinitions":{"en":{},"nb":{"at0000.1":{"@type":"ARCHETYPE_TERM","code":"at0000.1","text":"generic_prms","description":"Generisk container for informasjon gitt av et individ."}},"nn":{"at0000.1":{"@type":"ARCHETYPE_TERM","code":"at0000.1","text":"generic_prms","description":"*Generic container for information provided by an individual. (en)"}},"sv":{"at0000.1":{"@type":"ARCHETYPE_TERM","code":"at0000.1","text":"generic_prms","description":"Generell behållare för information som tillhandahålls av en individ."}},"de":{"at0000.1":{"@type":"ARCHETYPE_TERM","code":"at0000.1","text":"generic_prms","description":"Generischer Container für Informationen, die von einer Person bereitgestellt werden."}},"fr":{"at0000.1":{"@type":"ARCHETYPE_TERM","code":"at0000.1","text":"generic_prms","description":"Conteneur générique pour des informations fournies par un individu."}},"pt":{"at0000.1":{"@type":"ARCHETYPE_TERM","code":"at0000.1","text":"generic_prms","description":"Contentor genérico para informação fornecida por um indivíduo."}}},"termBindings":{},"terminologyExtracts":{},"valueSets":{}},"adlVersion":"1.4","buildUid":"cb4a8c15-317d-36da-a0e2-b8b17a32f0f0","rmName":"openehr","rmRelease":"1.1.0","generated":true,"templateId":"generic_prms","otherMetaData":{},"templateOverlays":[{"@type":"TEMPLATE_OVERLAY","uid":"bb638bd2-1baa-4d27-a211-d930f3914837","description":{"@type":"RESOURCE_DESCRIPTION","originalAuthor":{},"otherContributors":[],"ipAcknowledgements":{},"references":{},"conversionDetails":{},"otherDetails":{"PARENT:MD5-CAM-1.0.1":"ea2a7aa2fef1e81a5f6c8a1c2654fc9f"},"details":{"en":{"@type":"RESOURCE_DESCRIPTION_ITEM","language":{"terminologyId":{"value":"ISO_639-1"},"codeString":"en"},"keywords":[],"originalResourceUri":{},"otherDetails":{}}}},"annotations":{"@type":"RESOURCE_ANNOTATIONS","documentation":{"en":{"/data[at0001]/events[at0002]/data[at0003]/items[at0039]/items[at0063]":{"order":"11"},"/data[at0001]/events[at0002]/data[at0003]/items[at0004]":{"order":"1"},"/data[at0001]/events[at0002]/data[at0003]/items[at0039]/items[at0040]":{"order":"9"},"/data[at0001]/events[at0002]/data[at0003]/items[at0032]/items[at0036]":{"order":"7"},"/data[at0001]/events[at0002]/data[at0003]/items[at0010]/items[at0016]":{"order":"3"},"/data[at0001]/events[at0002]/data[at0003]/items[at0020]/items[at0021]":{"order":"5"},"/data[at0001]/events[at0002]/data[at0003]/items[at0039]/items[at0056]":{"order":"10"},"/data[at0001]/events[at0002]/data[at0003]/items[at0010]/items[at0012]":{"order":"2"},"/data[at0001]/events[at0002]/data[at0003]/items[at0046]":{"order":"8"},"/data[at0001]/events[at0002]/data[at0003]/items[at0076]":{"order":"12"},"/data[at0001]/events[at0002]/data[at0003]/items[at0020]/items[at0029]":{"order":"4"},"/data[at0001]/events[at0002]/data[at0003]/items[at0032]/items[at0033]":{"order":"6"}}}},"parentArchetypeId":"openEHR-EHR-OBSERVATION.sf12.v0","differential":true,"archetypeId":{"@type":"ARCHETYPE_HRID","value":"openEHR-EHR-OBSERVATION.ovl-sf12-001.v0"},"definition":{"@type":"C_COMPLEX_OBJECT","rmTypeName":"OBSERVATION","nodeId":"at0000.1","attributes":[{"@type":"C_ATTRIBUTE","rmAttributeName":"protocol","children":[{"@type":"C_COMPLEX_OBJECT","rmTypeName":"ITEM_TREE","nodeId":"at0011","attributes":[{"@type":"C_ATTRIBUTE","rmAttributeName":"items","children":[{"@type":"C_ARCHETYPE_ROOT","rmTypeName":"CLUSTER","occurrences":"0..1","nodeId":"at0083.1","attributes":[],"attributeTuples":[],"archetypeRef":"openEHR-EHR-CLUSTER.ovl-prm_properties-001.v0","referenceType":"archetypeOverlay"}]}],"attributeTuples":[]}]}],"attributeTuples":[]},"terminology":{"@type":"ARCHETYPE_TERMINOLOGY","conceptCode":"at0000","termDefinitions":{"en":{}},"termBindings":{},"terminologyExtracts":{},"valueSets":{}},"adlVersion":"1.4","buildUid":"a995dd0b-e638-3e4c-add1-b6ce26261a7e","rmName":"openehr","rmRelease":"1.1.0","generated":true,"otherMetaData":{},"originalLanguage":{"terminologyId":{"value":"ISO_639-1"},"codeString":"en"},"translations":[]},{"@type":"TEMPLATE_OVERLAY","uid":"11630a12-d41f-48a9-9b71-b8cdacd8e71b","description":{"@type":"RESOURCE_DESCRIPTION","originalAuthor":{},"otherContributors":[],"ipAcknowledgements":{},"references":{},"conversionDetails":{},"otherDetails":{"PARENT:MD5-CAM-1.0.1":"06015e089f00e82a8fc4e19211ad292c"},"details":{"en":{"@type":"RESOURCE_DESCRIPTION_ITEM","language":{"terminologyId":{"value":"ISO_639-1"},"codeString":"en"},"keywords":[],"originalResourceUri":{},"otherDetails":{}}}},"parentArchetypeId":"openEHR-EHR-CLUSTER.prm_properties.v0","differential":true,"archetypeId":{"@type":"ARCHETYPE_HRID","value":"openEHR-EHR-CLUSTER.ovl-prm_properties-001.v0"},"definition":{"@type":"C_COMPLEX_OBJECT","rmTypeName":"CLUSTER","nodeId":"at0000.1","attributes":[],"attributeTuples":[]},"terminology":{"@type":"ARCHETYPE_TERMINOLOGY","conceptCode":"at0000","termDefinitions":{"en":{}},"termBindings":{},"terminologyExtracts":{},"valueSets":{}},"adlVersion":"1.4","buildUid":"d376d74c-f960-3067-bade-2da4e5ec7819","rmName":"openehr","rmRelease":"1.1.0","generated":true,"otherMetaData":{},"originalLanguage":{"terminologyId":{"value":"ISO_639-1"},"codeString":"en"},"translations":[]}],"originalLanguage":{"terminologyId":{"value":"ISO_639-1"},"codeString":"en"},"translations":[{"@type":"TRANSLATION_DETAILS","language":{"terminologyId":{"value":"ISO_639-1"},"codeString":"nn"},"author":{},"otherDetails":{}},{"@type":"TRANSLATION_DETAILS","language":{"terminologyId":{"value":"ISO_639-1"},"codeString":"de"},"author":{},"otherDetails":{}},{"@type":"TRANSLATION_DETAILS","language":{"terminologyId":{"value":"ISO_639-1"},"codeString":"sv"},"author":{},"otherDetails":{}},{"@type":"TRANSLATION_DETAILS","language":{"terminologyId":{"value":"ISO_639-1"},"codeString":"nb"},"author":{},"otherDetails":{}},{"@type":"TRANSLATION_DETAILS","language":{"terminologyId":{"value":"ISO_639-1"},"codeString":"pt"},"author":{},"otherDetails":{}},{"@type":"TRANSLATION_DETAILS","language":{"terminologyId":{"value":"ISO_639-1"},"codeString":"fr"},"author":{},"otherDetails":{}}]}
+{
+  "@type" : "TEMPLATE",
+  "uid" : "c9bcb0e6-a2f1-404a-92a8-522256277f36",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "name" : "Koray Atalag",
+      "organisation" : "Galata-Digital",
+      "email" : "koray.atalag@gmail.com",
+      "date" : "2024-11-18"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "",
+      "custodian_organisation" : "",
+      "original_namespace" : "",
+      "original_publisher" : "",
+      "custodian_namespace" : "",
+      "sem_ver" : "0.2.1",
+      "build_uid" : "",
+      "PARENT:MD5-CAM-1.0.1" : "93D7156AD670461B54017CE2CB55ECAF",
+      "MD5-CAM-1.0.1" : "426318d3c4e751f1905f54cbceffd15a"
+    },
+    "details" : {
+      "nn" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nn"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "pt" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "fr" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "fr"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-COMPOSITION.self_reported_data.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-COMPOSITION.t_self_reported_data.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "COMPOSITION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "context",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "EVENT_CONTEXT",
+        "attributes" : [ ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "content",
+      "existence" : "0..1",
+      "cardinality" : {
+        "@type" : "CARDINALITY",
+        "interval" : "1..*",
+        "ordered" : false,
+        "unique" : false
+      },
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.4",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-sf12-001.v0",
+        "referenceType" : "archetypeOverlay"
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : { },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "generic_prms",
+          "description" : "Generisk container for informasjon gitt av et individ."
+        }
+      },
+      "nn" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "generic_prms",
+          "description" : "*Generic container for information provided by an individual. (en)"
+        }
+      },
+      "sv" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "generic_prms",
+          "description" : "Generell behållare för information som tillhandahålls av en individ."
+        }
+      },
+      "de" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "generic_prms",
+          "description" : "Generischer Container für Informationen, die von einer Person bereitgestellt werden."
+        }
+      },
+      "fr" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "generic_prms",
+          "description" : "Conteneur générique pour des informations fournies par un individu."
+        }
+      },
+      "pt" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "generic_prms",
+          "description" : "Contentor genérico para informação fornecida por um indivíduo."
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "cb4a8c15-317d-36da-a0e2-b8b17a32f0f0",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "generic_prms",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "0813d965-7aca-4517-999c-b289e21eec00",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "6bdfe567c5a1cc7b0c2b8b5dc9baaf59"
+      },
+      "details" : { }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0039]/items[at0063]" : {
+            "order" : "11"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0004]" : {
+            "order" : "1"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0039]/items[at0040]" : {
+            "order" : "9"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0032]/items[at0036]" : {
+            "order" : "7"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0010]/items[at0016]" : {
+            "order" : "3"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0020]/items[at0021]" : {
+            "order" : "5"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0039]/items[at0056]" : {
+            "order" : "10"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0010]/items[at0012]" : {
+            "order" : "2"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0046]" : {
+            "order" : "8"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0076]" : {
+            "order" : "12"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0020]/items[at0029]" : {
+            "order" : "4"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0032]/items[at0033]" : {
+            "order" : "6"
+          }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.sf12.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-sf12-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0011",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0083.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-prm_properties-001.v0",
+              "referenceType" : "archetypeOverlay"
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "a995dd0b-e638-3e4c-add1-b6ce26261a7e",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "3faaead3-b5bf-48b0-9647-df66b37c79b5",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "06015e089f00e82a8fc4e19211ad292c"
+      },
+      "details" : { }
+    },
+    "annotations" : {
+      "@type" : "RESOURCE_ANNOTATIONS",
+      "documentation" : {
+        "en" : {
+          "/items[at0018]" : {
+            "display" : "first"
+          }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.prm_properties.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-prm_properties-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "d376d74c-f960-3067-bade-2da4e5ec7819",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nn"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "fr"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  } ]
+}
