@@ -9,10 +9,10 @@ language
 
 description
 	original_author = <
+		["date"] = <"2024-11-18">
 		["name"] = <"Koray Atalag">
 		["organisation"] = <"Galata-Digital">
 		["email"] = <"koray.atalag@gmail.com">
-		["date"] = <"2024-11-18">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"aa2793669e216934b6962b2693288bef">
+		["MD5-CAM-1.0.1"] = <"ef8c4e5f2eca02a1347465c395089eeb">
 		["build_uid"] = <"d376d74c-f960-3067-bade-2da4e5ec7819">
 	>
 
@@ -44,6 +44,11 @@ definition
 				}
 			}
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Authors
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0018] occurrences matches {0..1} matches {    -- Copyright
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -208,6 +213,11 @@ See Diseases Category: https://www.ncbi.nlm.nih.gov/mesh/1000067
 				["at0017"] = <
 					text = <"Type">
 					description = <"PROMs, PREMs, FROMs">
+				>
+				["at0018"] = <
+					text = <"Copyright">
+					description = <"© The Medical Outcomes Trust (MOT), Health Assessment Lab (HAL) and QualityMetric Incorporated.">
+					comment = <"Copyright statement that needs to be displayed for electronic administration. May require specific formatting and display rules (e.g. all screens| beginning | end;  last see annotations).">
 				>
 			>
 		>
