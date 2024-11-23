@@ -1,5 +1,5 @@
-archetype (adl_version=1.4; uid=df241417-e210-3ea8-93ec-fc20be328e93)
-	openEHR-EHR-OBSERVATION.sf12-markdown.v0
+archetype (adl_version=1.4; uid=fdf722d4-a758-3c2b-8618-529385566c75)
+	openEHR-EHR-OBSERVATION.sf12_markdown.v0
 
 concept
 	[at0000]
@@ -26,12 +26,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"12ad9198b09fdd26b4170be934d27c4d">
+		["MD5-CAM-1.0.1"] = <"0fc3d27a97d310afad2ca13f8bc33ef0">
 		["build_uid"] = <"b7b753b6-626c-3660-9817-0855ec51582e">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- 12-Item Short Form Survey (SF-12)
+	OBSERVATION[at0000] matches {    -- 12-Item Short Form Survey (SF-12) Markdown
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
@@ -191,7 +191,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"12-Item Short Form Survey (SF-12)">
+					text = <"12-Item Short Form Survey (SF-12) Markdown">
 					description = <"# SF-12 Health Survey
 This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. **Answer each question by choosing just one answer**. If you are unsure how to answer a question, please give the best answer you can.">
 					comment = <"The SF-12v2 Health Survey is a 12-item subset of the SF-36v2 that measures the same eight domains of health. It is a brief, reliable measure of overall health status.  It is useful in large population health surveys and has been used extensively as a screening tool.">
