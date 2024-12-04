@@ -1,0 +1,514 @@
+archetype (adl_version=1.4; uid=869234de-96dc-42bf-bed5-23351613695f)
+	openEHR-EHR-OBSERVATION.sf_12.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2024-11-18">
+		["name"] = <"Koray Atalag">
+		["organisation"] = <"Galata-Digital">
+		["email"] = <"koray.atalag@gmail.com">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"38c3af0a3ac8279393aa294bbf3b576c">
+		["build_uid"] = <"a995dd0b-e638-3e4c-add1-b6ce26261a7e">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- sf_12
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					POINT_EVENT[at0002] occurrences matches {0..1} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									CLUSTER[at0092] occurrences matches {0..1} matches {    -- <H3> SF-12 Health Survey</H3><br>This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. <b>Answer each question by choosing just one answer</b>. If you are unsure how to answer a question, please give the best answer you can.
+										items cardinality matches {0..*; unordered} matches {
+											ELEMENT[at0004] occurrences matches {0..1} matches {    -- <b>In general, would you say your health is:</b>
+												value matches {
+													1.0|[local::at0087],
+													2.0|[local::at0088],
+													3.0|[local::at0089],
+													4.0|[local::at0090],
+													5.0|[local::at0091]
+												}
+											}
+										}
+									}
+									CLUSTER[at0010] occurrences matches {0..1} matches {    -- <b>The following questions are about activities you might do during a typical day. Does your health now limit you in these activities? If so, how much?</b>
+										items cardinality matches {0..*; unordered} matches {
+											ELEMENT[at0012] occurrences matches {0..1} matches {    -- <b>Moderate activities</b> such as moving a table, pushing a vacuum cleaner, bowling, or playing golf.
+												value matches {
+													1.0|[local::at0013],
+													2.0|[local::at0014],
+													3.0|[local::at0015]
+												}
+											}
+											ELEMENT[at0016] occurrences matches {0..1} matches {    -- Climbing <b>several</b> flights of stairs
+												value matches {
+													1.0|[local::at0017],
+													2.0|[local::at0018],
+													3.0|[local::at0019]
+												}
+											}
+										}
+									}
+									CLUSTER[at0020] occurrences matches {0..1} matches {    -- <b>During the <u>past 4 weeks</u>, have you had any of the following problems with your work or other regular daily activities <u>as a result of your physical health</u>?</b>
+										items cardinality matches {0..*; unordered} matches {
+											ELEMENT[at0029] occurrences matches {0..1} matches {    -- <b>Accomplished less</b> than you would like.
+												value matches {
+													1.0|[local::at0030],
+													2.0|[local::at0031]
+												}
+											}
+											ELEMENT[at0021] occurrences matches {0..1} matches {    -- Were limited in the <b>kind</b> of work or other activities.
+												value matches {
+													1.0|[local::at0022],
+													2.0|[local::at0023]
+												}
+											}
+										}
+									}
+									CLUSTER[at0032] occurrences matches {0..1} matches {    -- <b>During the <u>past 4 weeks</u>, have you had any of the following problems with your work or other regular daily activities <u>as a result of any emotional problems</u> (such as feeling depressed or anxious)?</b>
+										items cardinality matches {0..*; unordered} matches {
+											ELEMENT[at0033] occurrences matches {0..1} matches {    -- <b>Accomplished less</b> than you would like.
+												value matches {
+													1.0|[local::at0034],
+													2.0|[local::at0035]
+												}
+											}
+											ELEMENT[at0036] occurrences matches {0..1} matches {    -- Did work or activities <b>less carefully than usual.</b>
+												value matches {
+													1.0|[local::at0037],
+													2.0|[local::at0038]
+												}
+											}
+										}
+									}
+									ELEMENT[at0046] occurrences matches {0..1} matches {    -- <b>During the <u>past 4 weeks</u>, how much <u>did pain interfere</u> with your normal work (including work outside the home and housework)?</b>
+										value matches {
+											1.0|[local::at0047],
+											2.0|[local::at0048],
+											3.0|[local::at0049],
+											4.0|[local::at0050],
+											5.0|[local::at0051]
+										}
+									}
+									CLUSTER[at0039] occurrences matches {0..1} matches {    -- <b>These questions are about how you have been feeling during the past 4 weeks.<br>For each question, please give the one answer that comes closest to the way you have been feeling.</b>
+										items cardinality matches {0..*; unordered} matches {
+											ELEMENT[at0040] occurrences matches {0..1} matches {    -- <b>How much of the time during the <u>past 4 weeks</u>…</b> Have you felt calm & peaceful?
+												value matches {
+													1.0|[local::at0041],
+													2.0|[local::at0042],
+													3.0|[local::at0052],
+													4.0|[local::at0053],
+													5.0|[local::at0054],
+													6.0|[local::at0055]
+												}
+											}
+											ELEMENT[at0056] occurrences matches {0..1} matches {    -- <b>How much of the time during the <u>past 4 weeks</u>…</b> Did you have a lot of energy?
+												value matches {
+													1.0|[local::at0057],
+													2.0|[local::at0058],
+													3.0|[local::at0059],
+													4.0|[local::at0060],
+													5.0|[local::at0061],
+													6.0|[local::at0062]
+												}
+											}
+											ELEMENT[at0063] occurrences matches {0..1} matches {    -- <b>How much of the time during the <u>past 4 weeks</u>…</b> Have you felt down-hearted and blue?
+												value matches {
+													1.0|[local::at0064],
+													2.0|[local::at0065],
+													3.0|[local::at0066],
+													4.0|[local::at0067],
+													5.0|[local::at0068],
+													6.0|[local::at0069]
+												}
+											}
+										}
+									}
+									ELEMENT[at0076] occurrences matches {0..1} matches {    -- <b>During the <u>past 4 weeks</u>, how much of the time has your <u>physical health or emotional problems</u> interfered with your social activities (like visiting friends, relatives, etc.)?</b>
+										value matches {
+											1.0|[local::at0077],
+											2.0|[local::at0078],
+											3.0|[local::at0079],
+											4.0|[local::at0080],
+											5.0|[local::at0081],
+											6.0|[local::at0082]
+										}
+									}
+									CLUSTER[at0084] occurrences matches {0..1} matches {    -- Scoring
+										items cardinality matches {0..*; unordered} matches {
+											ELEMENT[at0085] occurrences matches {0..*} matches {    -- Score
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::380]>
+														list = <
+															["1"] = <
+																units = <"1">
+															>
+														>
+													>
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0011] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0083] occurrences matches {0..1} matches {    -- PRM Properties
+						include
+							archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.prm_properties(-[a-zA-Z0-9_]+)*\.v0/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"sf_12">
+					description = <"# SF-12 Health Survey
+This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. **Answer each question by choosing just one answer**. If you are unsure how to answer a question, please give the best answer you can.">
+					comment = <"The SF-12v2 Health Survey is a 12-item subset of the SF-36v2 that measures the same eight domains of health. It is a brief, reliable measure of overall health status.  It is useful in large population health surveys and has been used extensively as a screening tool.">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"<b>In general, would you say your health is:</b>">
+					description = <"**In general, would you say your health is:**">
+					order = <"1">
+				>
+				["at0010"] = <
+					text = <"<b>The following questions are about activities you might do during a typical day. Does your health now limit you in these activities? If so, how much?</b>">
+					description = <"**The following questions are about activities you might do during a typical day. Does your health now limit you in these activities? If so, how much?**">
+				>
+				["at0011"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0012"] = <
+					text = <"<b>Moderate activities</b> such as moving a table, pushing a vacuum cleaner, bowling, or playing golf.">
+					description = <"**Moderate activities** such as moving a table, pushing a vacuum cleaner, bowling, or playing golf. ">
+					order = <"2">
+				>
+				["at0013"] = <
+					text = <"Yes, limited a lot">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Yes, limited a little">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"No, not limited at all">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Climbing <b>several</b> flights of stairs">
+					description = <"Climbing **several** flights of stairs">
+					order = <"3">
+				>
+				["at0017"] = <
+					text = <"Yes, limited a lot">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Yes, limited a little">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"No, not limited at all">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"<b>During the <u>past 4 weeks</u>, have you had any of the following problems with your work or other regular daily activities <u>as a result of your physical health</u>?</b>">
+					description = <"**During the <ins>past 4 weeks</ins>, have you had any of the following problems with your work or other regular
+daily activities <ins>as a result of your physical health</ins>?**">
+				>
+				["at0021"] = <
+					text = <"Were limited in the <b>kind</b> of work or other activities.">
+					description = <"Were limited in the **kind** of work or other activities.">
+					order = <"5">
+				>
+				["at0022"] = <
+					text = <"YES">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"NO">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"<b>Accomplished less</b> than you would like.">
+					description = <"**Accomplished less** than you would like.">
+					order = <"4">
+				>
+				["at0030"] = <
+					text = <"YES">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"NO">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"<b>During the <u>past 4 weeks</u>, have you had any of the following problems with your work or other regular daily activities <u>as a result of any emotional problems</u> (such as feeling depressed or anxious)?</b>">
+					description = <"**During the <ins>past 4 weeks</ins>, have you had any of the following problems with your work or other regular
+daily activities <ins>as a result of any emotional problems</ins> (such as feeling depressed or anxious)?**">
+				>
+				["at0033"] = <
+					text = <"<b>Accomplished less</b> than you would like.">
+					description = <"**Accomplished less** than you would like.">
+					order = <"6">
+				>
+				["at0034"] = <
+					text = <"YES">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"NO">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"Did work or activities <b>less carefully than usual.</b>">
+					description = <"Did work or activities **less carefully than usual**.">
+					order = <"7">
+				>
+				["at0037"] = <
+					text = <"YES">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"NO">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"<b>These questions are about how you have been feeling during the past 4 weeks.<br>For each question, please give the one answer that comes closest to the way you have been feeling.</b>">
+					description = <"**These questions are about how you have been feeling during the past 4 weeks.**
+**For each question, please give the one answer that comes closest to the way you have been feeling.**">
+					comment = <"Display on screen once for this group of questions before the questions.">
+				>
+				["at0040"] = <
+					text = <"<b>How much of the time during the <u>past 4 weeks</u>…</b> Have you felt calm & peaceful?">
+					description = <"**How much of the time during the <ins>past 4 weeks</ins>…**
+Have you felt calm & peaceful?">
+					order = <"9">
+				>
+				["at0041"] = <
+					text = <"All of the time">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Most of the time">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"<b>During the <u>past 4 weeks</u>, how much <u>did pain interfere</u> with your normal work (including work outside the home and housework)?</b>">
+					description = <"**During the <ins>past 4 weeks</ins>, how much <ins>did pain interfere</ins> with your normal work (including work outside the home and housework)?**">
+					order = <"8">
+				>
+				["at0047"] = <
+					text = <"Not at all">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"A little bit">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"Moderately">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"Quite a bit">
+					description = <"">
+				>
+				["at0051"] = <
+					text = <"Extremely">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"A good bit of the time">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"Some of the time">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"A little of the time">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"None of the time">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"<b>How much of the time during the <u>past 4 weeks</u>…</b> Did you have a lot of energy?">
+					description = <"**How much of the time during the <ins>past 4 weeks</ins>…**
+Did you have a lot of energy? ">
+					order = <"10">
+				>
+				["at0057"] = <
+					text = <"All of the time">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Most of the time">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"A good bit of the time">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"Some of the time">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"A little of the time">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"None of the time">
+					description = <"">
+				>
+				["at0063"] = <
+					text = <"<b>How much of the time during the <u>past 4 weeks</u>…</b> Have you felt down-hearted and blue?">
+					description = <"**How much of the time during the <ins>past 4 weeks</ins>…**
+Have you felt down-hearted and blue?">
+					order = <"11">
+				>
+				["at0064"] = <
+					text = <"All of the time">
+					description = <"">
+				>
+				["at0065"] = <
+					text = <"Most of the time">
+					description = <"">
+				>
+				["at0066"] = <
+					text = <"A good bit of the time">
+					description = <"">
+				>
+				["at0067"] = <
+					text = <"Some of the time">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"A little of the time">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"None of the time">
+					description = <"">
+				>
+				["at0076"] = <
+					text = <"<b>During the <u>past 4 weeks</u>, how much of the time has your <u>physical health or emotional problems</u> interfered with your social activities (like visiting friends, relatives, etc.)?</b>">
+					description = <"**During the <ins>past 4 weeks</ins>, how much of the time has your <ins>physical health or emotional problems</ins> interfered with your social activities (like visiting friends, relatives, etc.)?**">
+					order = <"12">
+				>
+				["at0077"] = <
+					text = <"All of the time">
+					description = <"">
+				>
+				["at0078"] = <
+					text = <"Most of the time">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"A good bit of the time">
+					description = <"">
+				>
+				["at0080"] = <
+					text = <"Some of the time">
+					description = <"">
+				>
+				["at0081"] = <
+					text = <"A little of the time">
+					description = <"">
+				>
+				["at0082"] = <
+					text = <"None of the time">
+					description = <"">
+				>
+				["at0083"] = <
+					text = <"PRM Properties">
+					description = <"Slot in the list of properties that apply to the PRM.">
+				>
+				["at0084"] = <
+					text = <"Scoring">
+					description = <"Use markdown formatted instructions or other info that would apply to underlying score(s)">
+					comment = <"Capture score(s); which may be a single score or scores by domain or other types">
+				>
+				["at0085"] = <
+					text = <"Score">
+					description = <"">
+					comment = <"Determine type of score and rename accordingly; use markdown for specific formatting. For multiple scores create as many items as needed (Cardinality is {0..*}">
+				>
+				["at0087"] = <
+					text = <"Excellent">
+					description = <"">
+				>
+				["at0088"] = <
+					text = <"Very good">
+					description = <"">
+				>
+				["at0089"] = <
+					text = <"Good">
+					description = <"">
+				>
+				["at0090"] = <
+					text = <"Fair">
+					description = <"">
+				>
+				["at0091"] = <
+					text = <"Poor">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"<H3> SF-12 Health Survey</H3><br>This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. <b>Answer each question by choosing just one answer</b>. If you are unsure how to answer a question, please give the best answer you can.">
+					description = <"<H3> SF-12 Health Survey</H3><br>This survey asks for your views about your health. This information will help keep track of how you feel and how well you are able to do your usual activities. <b>Answer each question by choosing just one answer</b>. If you are unsure how to answer a question, please give the best answer you can.">
+				>
+			>
+		>
+	>
